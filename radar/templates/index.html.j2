@@ -1,0 +1,30 @@
+{% extends "base.html.j2" %}
+{% block title %}Funding Rate Arbitrage Scanner - Funding Radar{% endblock %}
+{% block description %}Live funding-rate arbitrage opportunities across {{ venue_count }} perp DEXs, ranked by fee-adjusted net APR. Short the high-funding venue, long the low.{% endblock %}
+{% block content %}
+<h1>Funding Rate Arbitrage Scanner</h1>
+<p class="sub">Fee-adjusted net APR from holding a delta-neutral position for 7 days. Short the high-funding leg, long the low-funding leg.</p>
+
+{% if opportunities %}
+<table>
+<thead><tr><th>Coin</th><th>Short (high)</th><th>Long (low)</th><th>Spread APR</th><th>Net APR</th><th>Min leg OI</th></tr></thead>
+<tbody>
+{% for o in opportunities %}
+<tr>
+<td><a href="funding-rates/{{ o.symbol }}/">{{ o.symbol }}</a></td>
+<td>{{ o.short_venue }} <span class="pos">{{ pct(o.short_apr) }}</span></td>
+<td>{{ o.long_venue }} <span class="neg">{{ pct(o.long_apr) }}</span></td>
+<td>{{ pct(o.spread_apr) }}</td>
+<td><strong>{{ pct(o.net_apr) }}</strong></td>
+<td>{{ usd(o.min_oi_usd) }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% else %}
+<p>No opportunities above threshold right now.</p>
+{% endif %}
+
+<h2>Tracked exchanges</h2>
+<p>{% for v in venues %}<a href="exchanges/{{ v }}/">{{ v }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+{% endblock %}

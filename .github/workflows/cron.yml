@@ -1,0 +1,88 @@
+name: cron
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+# contents: write lets us push the data branch; pages/id-token for Pages deploy.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cron
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install
+        run: pip install -e .
+
+      # Restore accumulated history from the data branch (may not exist yet).
+      - name: Restore data branch
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data-restore
+
+      - name: Seed data dir
+        run: |
+          mkdir -p data
+          if [ -d data-restore ]; then
+            cp -r data-restore/. data/ 2>/dev/null || true
+            rm -rf data/.git
+          fi
+
+      - name: Run pipeline + build site
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          TELEGRAM_URL: ${{ vars.TELEGRAM_URL }}
+          APIFY_URL: ${{ vars.APIFY_URL }}
+        run: python -m radar.run --data-dir data --site-out _site
+
+      # Persist history + latest.json back to the data branch (created if absent).
+      - name: Publish data branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: data
+          folder: data
+          commit-message: "data: ${{ github.run_id }}"
+          single-commit: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      # Alert the maintainer on any failure (build broke, all venues down, etc).
+      - name: Notify failure
+        if: failure()
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ADMIN: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+        run: |
+          if [ -n "$TOKEN" ] && [ -n "$ADMIN" ]; then
+            curl -s -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+              -d chat_id="${ADMIN}" \
+              -d text="Funding Radar cron failed: run ${{ github.run_id }} (${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >/dev/null || true
+          fi

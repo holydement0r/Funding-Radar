@@ -12,6 +12,10 @@ TAKER_FEES: dict[str, float] = {
     "aster": 0.00035,        # verification pending: https://docs.asterdex.com fees page
     "paradex": 0.0003,       # verification pending: https://docs.paradex.trade fees page
     "lighter": 0.0,          # verification pending: lighter.xyz — zero-fee model
+    "binance_via_lighter": 0.0004,  # verification pending: binance.com/fee futures taker
+    "dydx": 0.0005,          # verification pending: docs.dydx.exchange fees
+    "extended": 0.00025,     # verification pending: extended.exchange fees
+    "pacifica": 0.0004,      # verification pending: pacifica.fi fees
 }
 
 # Unknown venues get a conservative (high) fee so net_apr is understated,

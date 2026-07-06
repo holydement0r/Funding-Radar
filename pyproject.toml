@@ -15,5 +15,8 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools]
 packages = ["radar", "radar.venues"]
 
+[tool.setuptools.package-data]
+radar = ["templates/*.j2", "templates/*.css"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
