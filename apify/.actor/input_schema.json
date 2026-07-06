@@ -1,0 +1,43 @@
+{
+  "title": "Funding Radar input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "mode": {
+      "title": "Mode",
+      "type": "string",
+      "description": "arb = fee-adjusted funding-arbitrage opportunities; rates = raw funding rate per venue per coin.",
+      "editor": "select",
+      "enum": ["arb", "rates"],
+      "enumTitles": ["Arbitrage opportunities", "Raw funding rates"],
+      "default": "arb"
+    },
+    "symbols": {
+      "title": "Coins (optional filter)",
+      "type": "array",
+      "description": "Filter to these coin symbols, e.g. [\"BTC\", \"ETH\"]. Empty = all coins.",
+      "editor": "stringList",
+      "default": []
+    },
+    "venues": {
+      "title": "Exchanges (optional filter)",
+      "type": "array",
+      "description": "Filter to these venues, e.g. [\"hyperliquid\", \"paradex\"]. Empty = all 8 venues.",
+      "editor": "stringList",
+      "default": []
+    },
+    "minNetApr": {
+      "title": "Minimum net APR (arb mode)",
+      "type": "string",
+      "description": "Only return arb opportunities with net APR at or above this (decimal, e.g. 0.10 = 10%).",
+      "editor": "textfield",
+      "default": "0.10"
+    },
+    "requireOi": {
+      "title": "Require verified open interest (arb mode)",
+      "type": "boolean",
+      "description": "Drop opportunities where a leg's open interest is unknown (recommended - filters thin/stale markets).",
+      "default": true
+    }
+  }
+}
