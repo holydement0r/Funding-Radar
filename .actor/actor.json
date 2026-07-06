@@ -11,7 +11,29 @@
     "dataset": {
       "actorSpecification": 1,
       "title": "Funding rates / arbitrage opportunities",
-      "views": {}
+      "views": {
+        "arbitrage": {
+          "title": "Arbitrage opportunities",
+          "transformation": {
+            "fields": [
+              "symbol", "short_venue", "short_apr",
+              "long_venue", "long_apr", "net_apr", "min_oi_usd"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "symbol": { "label": "Coin" },
+              "short_venue": { "label": "Short venue" },
+              "short_apr": { "label": "Short APR" },
+              "long_venue": { "label": "Long venue" },
+              "long_apr": { "label": "Long APR" },
+              "net_apr": { "label": "Net APR" },
+              "min_oi_usd": { "label": "Min leg OI (USD)" }
+            }
+          }
+        }
+      }
     }
   }
 }
