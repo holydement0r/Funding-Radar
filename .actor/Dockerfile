@@ -1,12 +1,12 @@
-# Build context is the repo root (where .actor/ lives). We install the
-# radar library from the local source — no GitHub clone at build time,
-# so no rate limits.
+# Build context is the repo root (where .actor/ lives).
+# We do NOT pip-install the local project — that build step was the only
+# thing failing. Instead we install just the third-party runtime deps and
+# run the actor straight from the copied source: both `radar/` and `actor/`
+# sit in the workdir and import directly. The apify SDK ships in the base image.
 FROM apify/actor-python:3.11
 
+RUN pip install --no-cache-dir httpx jinja2
+
 COPY . ./
-# Non-editable install: builds a wheel and installs radar into site-packages.
-# Editable (-e) is fragile in containers; the actor package runs from the
-# copied source via `python -m actor`.
-RUN pip install --no-cache-dir .
 
 CMD ["python", "-m", "actor"]
