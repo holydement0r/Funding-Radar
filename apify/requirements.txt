@@ -1,3 +1,0 @@
-apify>=2.0.0
-# Core logic lives in the public Funding Radar repo; install it directly.
-funding-radar @ git+https://github.com/holydement0r/Funding-Radar.git@main

@@ -56,7 +56,8 @@ hyperliquid · aster · paradex · lighter · binance (via lighter) · dydx · e
 ### For the maintainer — publishing checklist
 
 1. Install CLI: `npm i -g apify-cli`, then `apify login`.
-2. From `apify/`: `apify push`.
+2. From the **repo root** (where `.actor/` lives): `apify push`. The build
+   installs the radar library from local source — no GitHub clone, no rate limits.
 3. In Apify Console → your actor → Publication → Monetization: turn on **Pay per event + usage** (takes 14 days to activate). Define two events:
    - `actor-start` — charged once per run (cover base compute)
    - `result-item` — charged per row returned

@@ -6,5 +6,5 @@ __pycache__/
 _site/
 data/history/
 data/alert_state.json
-apify/storage/
-apify/.venv/
+storage/
+apify_storage/
