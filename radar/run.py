@@ -24,6 +24,7 @@ from radar.alert import format_alert, select_alerts, send_telegram
 from radar.arb import find_opportunities
 from radar.collect import collect_all
 from radar.models import FundingSnapshot
+from radar.store import prune_history, write_history
 from radar.venues.base import VenueAdapter
 
 log = logging.getLogger(__name__)
@@ -96,6 +97,12 @@ def main(argv: list[str] | None = None, adapters: list[VenueAdapter] | None = No
         "wrote latest.json: %d snapshots, %d opportunities, failed=%s",
         len(result.snapshots), len(opportunities), result.failed_venues,
     )
+
+    if not args.dry_run:
+        write_history(result.snapshots, root=str(data_dir))
+        pruned = prune_history(root=str(data_dir))
+        if pruned:
+            log.info("pruned %d old history day(s)", pruned)
 
     state_path = data_dir / "alert_state.json"
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
