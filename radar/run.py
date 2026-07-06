@@ -126,7 +126,12 @@ def main(argv: list[str] | None = None, adapters: list[VenueAdapter] | None = No
 
     state_path = data_dir / "alert_state.json"
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
-    alerts, next_state = select_alerts(opportunities, state)
+    # Channel credibility: only alert on opportunities whose both legs have
+    # verified open interest. No-OI pairs are mostly thin/stale noise with
+    # absurd APRs; they stay on the site's "unverified" table only.
+    alertable = [o for o in opportunities if o.min_oi_usd is not None]
+    threshold = float(os.environ.get("ALERT_THRESHOLD_APR") or "0.10")
+    alerts, next_state = select_alerts(alertable, state, threshold_apr=threshold)
     state_path.write_text(json.dumps(next_state, indent=1))
 
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "")

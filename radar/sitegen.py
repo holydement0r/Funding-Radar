@@ -24,6 +24,7 @@ TEMPLATES_DIR = Path(__file__).parent / "templates"
 TELEGRAM_URL = os.environ.get("TELEGRAM_URL", "https://t.me/fundingradar")
 APIFY_URL = os.environ.get("APIFY_URL", "https://apify.com/")
 MAX_COMPARE_PAGES = 8
+MAX_UNVERIFIED_ROWS = 15
 
 
 def _pct(x: float | None) -> str:
@@ -45,6 +46,17 @@ def _usd(x: float | None) -> str:
     return f"${x:,.2f}"
 
 
+def _price(x: float | None) -> str:
+    """Full price display (no K/M compression): $61,400 / $3.42 / $0.0841."""
+    if x is None:
+        return "n/a"
+    if abs(x) >= 1000:
+        return f"${x:,.0f}"
+    if abs(x) >= 1:
+        return f"${x:,.2f}"
+    return f"${x:.4f}"
+
+
 def _human(ts: int) -> str:
     return time.strftime("%Y-%m-%d %H:%M", time.gmtime(ts))
 
@@ -56,6 +68,7 @@ def _env() -> Environment:
     )
     env.globals["pct"] = _pct
     env.globals["usd"] = _usd
+    env.globals["price"] = _price
     return env
 
 
@@ -86,9 +99,12 @@ def build_site(latest: dict, history_7d: dict, out_dir: Path, site_url: str) -> 
     urls: list[str] = []
     pages = 0
 
-    # Index
+    # Index: liquidity-verified opportunities lead; no-OI ones are demoted
+    # to a clearly-labeled secondary table (they are mostly thin/stale noise).
+    verified = [o for o in opportunities if o.get("min_oi_usd") is not None]
+    unverified = [o for o in opportunities if o.get("min_oi_usd") is None][:MAX_UNVERIFIED_ROWS]
     render("index.html.j2", out_dir / "index.html", "", "/",
-           opportunities=opportunities, venues=venues)
+           verified=verified, unverified=unverified, venues=venues)
     urls.append("/")
     pages += 1
 

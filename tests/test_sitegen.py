@@ -22,6 +22,9 @@ LATEST = {
         {"symbol": "BTC", "long_venue": "paradex", "short_venue": "hyperliquid",
          "long_apr": 0.0985, "short_apr": 0.1095, "spread_apr": 0.011,
          "net_apr": 0.20, "min_oi_usd": 1_500_000.0},
+        {"symbol": "ETH", "long_venue": "lighter", "short_venue": "aster",
+         "long_apr": -1.62, "short_apr": 1.10, "spread_apr": 2.72,
+         "net_apr": 2.68, "min_oi_usd": None},
     ],
 }
 
@@ -49,6 +52,24 @@ def test_index_lists_opportunity(tmp_path):
     assert "BTC" in html
     assert "20.0%" in html  # net apr
     assert "hyperliquid" in html and "paradex" in html
+
+
+def test_index_separates_unverified_liquidity(tmp_path):
+    build(tmp_path)
+    html = (tmp_path / "index.html").read_text()
+    verified_pos = html.find("Liquidity-verified")
+    unverified_pos = html.find("Unverified liquidity")
+    assert 0 < verified_pos < unverified_pos
+    # the no-OI ETH opportunity renders only after the unverified heading
+    assert "268" in html[unverified_pos:]  # 2.68 net apr -> 268%
+    assert "268" not in html[:unverified_pos]
+
+
+def test_coin_page_mark_price_not_compressed(tmp_path):
+    build(tmp_path)
+    page = (tmp_path / "funding-rates" / "BTC" / "index.html").read_text()
+    assert "$62,000" in page       # full price, not $62.0K
+    assert "$62.0K" not in page
 
 
 def test_coin_page_has_venues_and_history(tmp_path):

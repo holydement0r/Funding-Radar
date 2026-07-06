@@ -54,6 +54,7 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL }}
           TELEGRAM_URL: ${{ vars.TELEGRAM_URL }}
           APIFY_URL: ${{ vars.APIFY_URL }}
+          ALERT_THRESHOLD_APR: ${{ vars.ALERT_THRESHOLD_APR }}
         run: python -m radar.run --data-dir data --site-out _site
 
       # Persist history + latest.json back to the data branch (created if absent).

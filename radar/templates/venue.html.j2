@@ -14,7 +14,7 @@
 <td><a href="../../funding-rates/{{ r.symbol }}/">{{ r.symbol }}</a></td>
 <td>{{ r.interval_hours|int }}h</td>
 <td class="{{ 'pos' if r.apr >= 0 else 'neg' }}">{{ pct(r.apr) }}</td>
-<td>{{ usd(r.mark_price) }}</td>
+<td>{{ price(r.mark_price) }}</td>
 <td>{{ usd(r.open_interest_usd) }}</td>
 </tr>
 {% endfor %}
