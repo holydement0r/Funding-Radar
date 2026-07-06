@@ -1,78 +1,78 @@
 # Funding Radar
 
-Cross-exchange **perpetual funding-rate aggregator + funding-arbitrage scanner** for decentralized perp DEXs. One pipeline feeds three channels:
+跨交易所**永续合约资金费率聚合 + 费率套利扫描器**，覆盖去中心化永续 DEX。一条管线喂三个变现渠道：
 
-- **Telegram alerts** — live funding-arb opportunities pushed to a free channel
-- **SEO static site** — a programmatically generated page per coin, per exchange, and per exchange-pair (GitHub Pages)
-- **Apify API** — the same data queryable programmatically (P2)
+- **Telegram 警报** —— 实时资金费率套利机会推送到免费频道
+- **SEO 静态站** —— 按币种、按交易所、按交易所对自动生成页面（GitHub Pages）
+- **Apify API** —— 同一份数据可编程查询（P2）
 
-No servers. The whole thing runs on a GitHub Actions cron every 30 minutes; git branches are the only storage.
+零服务器。整套跑在 GitHub Actions 定时任务上（每 30 分钟一次），git 分支就是唯一存储。
 
-## How it works
+## 工作原理
 
 ```
-GitHub Actions (*/30) → collect 8 perp DEXs → normalize → arb scan (fee-adjusted)
-   → write latest.json + hourly history (data branch)
-   → Telegram alerts (dedup)
-   → build static site → GitHub Pages
+GitHub Actions (*/30) → 采集 8 家永续 DEX → 归一化 → 套利扫描（扣手续费）
+   → 写 latest.json + 小时级历史（data 分支）
+   → Telegram 警报（去重）
+   → 生成静态站 → GitHub Pages
 ```
 
-Arb logic: for each coin, short the highest-funding venue and long the lowest. Net APR subtracts annualized round-trip taker fees over a 7-day hold.
+套利逻辑：每个币种，做空费率最高的交易所、做多费率最低的。净年化 = 费率价差 - 年化的双腿往返 taker 手续费（按持仓 7 天摊算）。
 
-## Tracked venues (8)
+## 已覆盖交易所（8 家）
 
-hyperliquid · aster · paradex · lighter · binance (via lighter) · dydx · extended · pacifica
+hyperliquid · aster · paradex · lighter · binance（经 lighter）· dydx · extended · pacifica
 
-See [docs/venue-notes.md](docs/venue-notes.md) for data sources and the venues that were skipped (drift, vest, bluefin, edgex, hibachi) with reasons.
+数据源说明和被跳过的交易所（drift、vest、bluefin、edgex、hibachi）及原因见 [docs/venue-notes.md](docs/venue-notes.md)。
 
-## Local development
+## 本地开发
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
-pytest -q                                   # full suite
-python -m radar.run --dry-run --data-dir /tmp/fr   # offline pipeline smoke (fixtures)
-python -m radar.run --skip-telegram --site-out _site   # live data, build site, no alerts
+pytest -q                                              # 全套测试
+python -m radar.run --dry-run --data-dir /tmp/fr       # 离线管线冒烟（用 fixture）
+python -m radar.run --skip-telegram --site-out _site   # 实时数据、建站、不发警报
 ```
 
-## Launch checklist (one-time, ~1 hour)
+## 上线清单（一次性，约 1 小时）
 
-Everything below needs your accounts; the code is ready.
+以下都需要你的账号，代码已就绪。
 
-1. **Create a public GitHub repo** and push this repository to it.
-   (Public repo = free unlimited Actions minutes + free Pages.)
-2. **Create the Telegram bot + channel:**
-   - Message [@BotFather](https://t.me/BotFather) → `/newbot` → copy the token.
-   - Create a public channel; add the bot as an administrator.
-   - Get the channel id (e.g. `@yourchannel` works directly).
-   - For failure DMs: message your bot, then note your own numeric chat id.
-3. **Add repo secrets** (Settings → Secrets and variables → Actions → Secrets):
+1. **建一个公开 GitHub 仓库**，把本仓库推上去。
+   （公开仓库 = 免费无限 Actions 分钟 + 免费 Pages。）
+2. **建 Telegram bot + 频道：**
+   - 给 [@BotFather](https://t.me/BotFather) 发 `/newbot` → 复制 token。
+   - 建一个公开频道；把 bot 加为管理员。
+   - 拿到频道 id（如 `@yourchannel` 可直接用）。
+   - 失败私聊用：先给你的 bot 发条消息，记下你自己的数字 chat id。
+3. **加仓库 Secrets**（Settings → Secrets and variables → Actions → Secrets）：
    - `TELEGRAM_BOT_TOKEN`
-   - `TELEGRAM_CHANNEL_ID` (e.g. `@yourchannel`)
-   - `TELEGRAM_ADMIN_CHAT_ID` (your numeric id, for failure alerts)
-4. **Add repo variables** (same page → Variables):
-   - `SITE_URL` (e.g. `https://<user>.github.io/<repo>`)
-   - `TELEGRAM_URL` (e.g. `https://t.me/yourchannel`)
-   - `APIFY_URL` (leave the default until the Apify actor ships in P2)
-5. **Enable Pages:** Settings → Pages → Source = "GitHub Actions".
-6. **Test before the schedule runs:** Actions → `cron` → "Run workflow".
-   Confirm: green run, `data` branch created, Pages URL live. To force a
-   first alert, temporarily lower the threshold (see below), run, then restore.
+   - `TELEGRAM_CHANNEL_ID`（如 `@yourchannel`）
+   - `TELEGRAM_ADMIN_CHAT_ID`（你的数字 id，用于失败告警）
+4. **加仓库 Variables**（同页 → Variables）：
+   - `SITE_URL`（如 `https://<user>.github.io/<repo>`）
+   - `TELEGRAM_URL`（如 `https://t.me/yourchannel`）
+   - `APIFY_URL`（P2 上线 Apify actor 前先留默认值）
+5. **开启 Pages：** Settings → Pages → Source 选 "GitHub Actions"。
+6. **在定时任务跑起来前先手动测：** Actions → `cron` → "Run workflow"。
+   确认：运行绿灯、`data` 分支已创建、Pages URL 可访问。想强制触发第一条
+   警报，临时调低阈值（见下），跑一次，再改回来。
 
-Record the live URLs here after launch:
+上线后把实际 URL 记在这里：
 
-- Site: _TBD_
-- Telegram channel: _TBD_
-- Apify actor: _TBD (P2)_
+- 站点：_待填_
+- Telegram 频道：_待填_
+- Apify actor：_待填（P2）_
 
-## Tuning
+## 参数调节
 
-Alert threshold and arb filters live in code:
+警报阈值和套利过滤条件都在代码里：
 
-- Alert threshold: `select_alerts(..., threshold_apr=0.15)` in `radar/run.py`
-- Min open interest / holding days: `find_opportunities(...)` defaults in `radar/arb.py`
-- Taker fees per venue: `radar/fees.py`
+- 警报阈值：`radar/run.py` 里 `select_alerts(..., threshold_apr=0.15)`
+- 最小持仓量 / 持仓天数：`radar/arb.py` 里 `find_opportunities(...)` 默认值
+- 各交易所 taker 手续费：`radar/fees.py`
 
-## Disclaimer
+## 免责声明
 
-Not financial advice. Funding arbitrage carries execution, liquidation, and counterparty risk. Data can be stale or wrong.
+非投资建议。资金费率套利存在执行、爆仓、对手方风险。数据可能滞后或错误。
