@@ -1,0 +1,299 @@
+{
+ "code": 200,
+ "funding_rates": [
+  {
+   "market_id": 61,
+   "exchange": "binance",
+   "symbol": "GMX",
+   "rate": -2.13e-05
+  },
+  {
+   "market_id": 47,
+   "exchange": "binance",
+   "symbol": "PENGU",
+   "rate": 7.886e-05
+  },
+  {
+   "market_id": 92,
+   "exchange": "binance",
+   "symbol": "XAU",
+   "rate": 0
+  },
+  {
+   "market_id": 187,
+   "exchange": "binance",
+   "symbol": "DELL",
+   "rate": 0
+  },
+  {
+   "market_id": 138,
+   "exchange": "binance",
+   "symbol": "AMD",
+   "rate": 0.00010873
+  },
+  {
+   "market_id": 0,
+   "exchange": "binance",
+   "symbol": "ETH",
+   "rate": 4.069e-05
+  },
+  {
+   "market_id": 1,
+   "exchange": "binance",
+   "symbol": "BTC",
+   "rate": 7.144e-05
+  },
+  {
+   "market_id": 2,
+   "exchange": "binance",
+   "symbol": "SOL",
+   "rate": 1.311e-05
+  },
+  {
+   "market_id": 84,
+   "exchange": "bybit",
+   "symbol": "0G",
+   "rate": -0.00173704
+  },
+  {
+   "market_id": 18,
+   "exchange": "bybit",
+   "symbol": "1000BONK",
+   "rate": -0.00033834
+  },
+  {
+   "market_id": 19,
+   "exchange": "bybit",
+   "symbol": "1000FLOKI",
+   "rate": 2.683e-05
+  },
+  {
+   "market_id": 4,
+   "exchange": "bybit",
+   "symbol": "1000PEPE",
+   "rate": 0.0001
+  },
+  {
+   "market_id": 81,
+   "exchange": "bybit",
+   "symbol": "1000TOSHI",
+   "rate": 0.0001
+  },
+  {
+   "market_id": 1,
+   "exchange": "bybit",
+   "symbol": "BTC",
+   "rate": -2.052e-05
+  },
+  {
+   "market_id": 0,
+   "exchange": "bybit",
+   "symbol": "ETH",
+   "rate": -2.34e-06
+  },
+  {
+   "market_id": 2,
+   "exchange": "bybit",
+   "symbol": "SOL",
+   "rate": -4.031e-05
+  },
+  {
+   "market_id": 1,
+   "exchange": "hyperliquid",
+   "symbol": "BTC",
+   "rate": 0.0001
+  },
+  {
+   "market_id": 0,
+   "exchange": "hyperliquid",
+   "symbol": "ETH",
+   "rate": 0.0001
+  },
+  {
+   "market_id": 62,
+   "exchange": "hyperliquid",
+   "symbol": "DYDX",
+   "rate": 0.0001
+  },
+  {
+   "market_id": 2,
+   "exchange": "hyperliquid",
+   "symbol": "SOL",
+   "rate": 0.0001
+  },
+  {
+   "market_id": 9,
+   "exchange": "hyperliquid",
+   "symbol": "AVAX",
+   "rate": 0.0001
+  },
+  {
+   "market_id": 101,
+   "exchange": "lighter",
+   "symbol": "CC",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 30,
+   "exchange": "lighter",
+   "symbol": "UNI",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 74,
+   "exchange": "lighter",
+   "symbol": "NMR",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 40,
+   "exchange": "lighter",
+   "symbol": "S",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 149,
+   "exchange": "lighter",
+   "symbol": "ROBO",
+   "rate": -0.001872
+  },
+  {
+   "market_id": 38,
+   "exchange": "lighter",
+   "symbol": "ONDO",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 37,
+   "exchange": "lighter",
+   "symbol": "PENDLE",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 55,
+   "exchange": "lighter",
+   "symbol": "OP",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 150,
+   "exchange": "lighter",
+   "symbol": "URA",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 131,
+   "exchange": "lighter",
+   "symbol": "AXS",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 204,
+   "exchange": "lighter",
+   "symbol": "POPMART",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 167,
+   "exchange": "lighter",
+   "symbol": "CRWV",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 201,
+   "exchange": "lighter",
+   "symbol": "TENCENT",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 146,
+   "exchange": "lighter",
+   "symbol": "XPD",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 144,
+   "exchange": "lighter",
+   "symbol": "AZTEC",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 123,
+   "exchange": "lighter",
+   "symbol": "BMNR",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 43,
+   "exchange": "lighter",
+   "symbol": "TRX",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 105,
+   "exchange": "lighter",
+   "symbol": "USDKRW",
+   "rate": 0
+  },
+  {
+   "market_id": 200,
+   "exchange": "lighter",
+   "symbol": "BYD",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 65,
+   "exchange": "lighter",
+   "symbol": "AERO",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 84,
+   "exchange": "lighter",
+   "symbol": "0G",
+   "rate": -0.000144
+  },
+  {
+   "market_id": 138,
+   "exchange": "lighter",
+   "symbol": "AMD",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 3,
+   "exchange": "lighter",
+   "symbol": "DOGE",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 165,
+   "exchange": "lighter",
+   "symbol": "ORCL",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 205,
+   "exchange": "lighter",
+   "symbol": "ZHIPU",
+   "rate": 3.2e-05
+  },
+  {
+   "market_id": 1,
+   "exchange": "lighter",
+   "symbol": "BTC",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 0,
+   "exchange": "lighter",
+   "symbol": "ETH",
+   "rate": 9.599999999999999e-05
+  },
+  {
+   "market_id": 2,
+   "exchange": "lighter",
+   "symbol": "SOL",
+   "rate": -7.2e-05
+  }
+ ]
+}
