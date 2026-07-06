@@ -24,8 +24,9 @@ async def main() -> None:
         min_net_apr = float(inp.get("minNetApr", 0.10))
         require_oi = bool(inp.get("requireOi", True))
 
-        # Charge once for the run, then per result item returned.
-        await Actor.charge("actor-start")
+        # The per-run base fee is Apify's built-in "apify-actor-start" event,
+        # charged automatically by the platform. We only charge per result
+        # item below (event "result-item").
 
         adapters = all_adapters()
         if venues:

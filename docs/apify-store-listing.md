@@ -58,8 +58,8 @@ hyperliquid · aster · paradex · lighter · binance (via lighter) · dydx · e
 1. Install CLI: `npm i -g apify-cli`, then `apify login`.
 2. From the **repo root** (where `.actor/` lives): `apify push`. The build
    installs the radar library from local source — no GitHub clone, no rate limits.
-3. In Apify Console → your actor → Publication → Monetization: turn on **Pay per event + usage** (takes 14 days to activate). Define two events:
-   - `actor-start` — charged once per run (cover base compute)
-   - `result-item` — charged per row returned
-   Suggested start: `actor-start` ~$0.02, `result-item` ~$0.005. Undercut Coinglass's subscription while staying profitable.
+3. In Apify Console → your actor → Publication → Monetization: turn on **Pay per event + usage** (takes 14 days to activate). Event setup:
+   - `apify-actor-start` — the platform's built-in per-run event (auto-charged by Apify, no code call needed). Raise its price from the $0.00005 default to ~$0.02 to cover base compute.
+   - `result-item` — add this event, charged per row returned; the actor charges it via `Actor.push_data(row, "result-item")`. Set ~$0.005.
+   Undercuts Coinglass's subscription while staying profitable.
 4. Local test before publish: `ACTOR_TEST_PAY_PER_EVENT=true apify run` (events default to $1 locally).
