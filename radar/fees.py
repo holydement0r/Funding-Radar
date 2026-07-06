@@ -1,21 +1,20 @@
 """Per-venue taker fees (decimal, one leg, one direction).
 
-Values from official fee pages; base tier, no VIP/volume discounts.
-Maintenance task: re-verify quarterly and when adding a venue (runbook).
-Verification pending marks values taken from docs knowledge that Sonnet
-must confirm against the live fee page (plan Task 18).
+Base-tier taker fees, no VIP/volume/token discounts. Verified against
+official docs 2026-07-06 (source per line). Re-verify quarterly and when
+adding a venue (see docs/runbook.md).
 """
 from __future__ import annotations
 
 TAKER_FEES: dict[str, float] = {
-    "hyperliquid": 0.00045,  # verification pending: https://hyperliquid.gitbook.io fees page
-    "aster": 0.00035,        # verification pending: https://docs.asterdex.com fees page
-    "paradex": 0.0003,       # verification pending: https://docs.paradex.trade fees page
-    "lighter": 0.0,          # verification pending: lighter.xyz — zero-fee model
-    "binance_via_lighter": 0.0004,  # verification pending: binance.com/fee futures taker
-    "dydx": 0.0005,          # verification pending: docs.dydx.exchange fees
-    "extended": 0.00025,     # verification pending: extended.exchange fees
-    "pacifica": 0.0004,      # verification pending: pacifica.fi fees
+    "hyperliquid": 0.00045,         # 0.045% - hyperliquid.gitbook.io/hyperliquid-docs/trading/fees
+    "aster": 0.0004,                # 0.04% USDT perps - docs.asterdex.com/trading/perpetuals/fees-and-specs/fees
+    "paradex": 0.0,                 # 0% taker on 100+ perps - docs.paradex.trade (2026)
+    "lighter": 0.0,                 # 0% standard accounts - docs.lighter.xyz/perpetual-futures/fees
+    "binance_via_lighter": 0.0004,  # 0.04% Binance USDT-M taker - binance.com/en/fee/futureFee
+    "dydx": 0.0005,                 # 0.05% base tier - docs.dydx.exchange
+    "extended": 0.00025,            # 0.025% flat - docs.extended.exchange (llms-full.txt)
+    "pacifica": 0.0004,             # 0.04% base - docs.pacifica.fi / rankfi.com/dex/pacifica
 }
 
 # Unknown venues get a conservative (high) fee so net_apr is understated,
