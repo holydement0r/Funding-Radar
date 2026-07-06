@@ -45,6 +45,14 @@ def normalize_symbol(raw: str, venue: str) -> str | None:
             s = s[: -len(suffix)]
             break
 
+    # Dash-quoted spot/perp names like "BTC-USD" (dYdX, Extended): strip a
+    # single trailing quote segment. Multi-dash option symbols such as
+    # "HYPE-USD-17JUL26-84-C" keep a dash after this and are rejected below.
+    if s.count("-") == 1:
+        head, tail = s.split("-")
+        if tail.upper() in _QUOTE_SUFFIXES:
+            s = head
+
     if "-" in s or "/" in s or ":" in s:
         return None  # option/expiry symbol or unknown separator format
 
