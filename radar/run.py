@@ -71,6 +71,47 @@ def _fixture_adapters() -> list[VenueAdapter]:
     ]
 
 
+PAPER_MAX_OPEN = 200
+PAPER_HOLDING_DAYS = 7.0
+
+
+def _run_paper_tracker(snapshots, opportunities, data_dir) -> None:
+    """Accrue/close existing paper trades, open new verified opportunities."""
+    from radar.fees import TAKER_FEES
+    from radar.paper import open_positions, update_positions
+    from radar.store import load_paper, save_paper
+
+    open_now, closed = load_paper(root=str(data_dir))
+    now = int(time.time())
+    open_now, newly_closed = update_positions(
+        open_now, snapshots, now=now, holding_days=PAPER_HOLDING_DAYS)
+    closed.extend(newly_closed)
+    verified = [o for o in opportunities if o.min_oi_usd is not None]
+    open_now = open_positions(verified, open_now, now=now,
+                              fees=TAKER_FEES, max_open=PAPER_MAX_OPEN)
+    save_paper(open_now, closed, root=str(data_dir))
+    log.info("paper: %d open, %d closed (+%d this run)",
+             len(open_now), len(closed), len(newly_closed))
+
+
+def _load_track_record(data_dir) -> dict:
+    """Summary stats + recent closed trades for the site's track-record page."""
+    from radar.paper import summarize
+    from radar.store import load_paper
+
+    _, closed = load_paper(root=str(data_dir))
+    summary = summarize(closed)
+    recent = [dataclasses.asdict(c) for c in closed[-50:][::-1]]
+    return {"summary": summary, "recent": recent, "open_count": _paper_open_count(data_dir)}
+
+
+def _paper_open_count(data_dir) -> int:
+    from radar.store import load_paper
+
+    open_now, _ = load_paper(root=str(data_dir))
+    return len(open_now)
+
+
 def main(argv: list[str] | None = None, adapters: list[VenueAdapter] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="radar.run")
     parser.add_argument("--dry-run", action="store_true")
@@ -115,13 +156,16 @@ def main(argv: list[str] | None = None, adapters: list[VenueAdapter] | None = No
         pruned = prune_history(root=str(data_dir))
         if pruned:
             log.info("pruned %d old history day(s)", pruned)
+        _run_paper_tracker(result.snapshots, opportunities, data_dir)
 
     if args.site_out:
         from radar.sitegen import build_site
 
         history_7d = load_history_window(root=str(data_dir))
         site_url = os.environ.get("SITE_URL", DEFAULT_SITE_URL)
-        pages = build_site(latest, history_7d, Path(args.site_out), site_url)
+        track_record = _load_track_record(data_dir)
+        pages = build_site(latest, history_7d, Path(args.site_out), site_url,
+                           track_record=track_record)
         log.info("built site: %d pages -> %s", pages, args.site_out)
 
     state_path = data_dir / "alert_state.json"

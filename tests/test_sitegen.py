@@ -120,6 +120,30 @@ def test_cta_present_on_every_page(tmp_path):
         assert "Apify" in html
 
 
+def test_track_record_page_empty(tmp_path):
+    build(tmp_path)  # no track_record passed -> empty state
+    page = (tmp_path / "track-record" / "index.html").read_text()
+    assert "Track Record" in page
+    assert "No paper trades have closed yet" in page
+
+
+def test_track_record_page_with_data(tmp_path):
+    tr = {
+        "summary": {"count": 12, "avg_predicted_apr": 0.25, "avg_realized_apr": 0.18,
+                    "win_rate": 0.75, "realized_vs_predicted": 0.72},
+        "recent": [
+            {"symbol": "BTC", "short_venue": "hyperliquid", "long_venue": "lighter",
+             "predicted_net_apr": 0.20, "realized_net_apr": 0.15, "exit_ts": 1783326670},
+        ],
+        "open_count": 5,
+    }
+    build_site(LATEST, HISTORY_7D, tmp_path, SITE_URL, track_record=tr)
+    page = (tmp_path / "track-record" / "index.html").read_text()
+    assert "18.0%" in page  # avg realized
+    assert "BTC" in page
+    assert "15.0%" in page  # realized on the row
+
+
 def test_no_javascript(tmp_path):
     build(tmp_path)
     html = (tmp_path / "index.html").read_text()

@@ -72,10 +72,12 @@ def _env() -> Environment:
     return env
 
 
-def build_site(latest: dict, history_7d: dict, out_dir: Path, site_url: str) -> int:
+def build_site(latest: dict, history_7d: dict, out_dir: Path, site_url: str,
+               track_record: dict | None = None) -> int:
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     env = _env()
+    env.globals["human_ts"] = _human
 
     snapshots = latest.get("snapshots", [])
     opportunities = latest.get("opportunities", [])
@@ -152,6 +154,14 @@ def build_site(latest: dict, history_7d: dict, out_dir: Path, site_url: str) -> 
            "../", "/exchanges/",
            venues=venues, counts=counts, venue_list=", ".join(venues), pairs=pairs)
     urls.append("/exchanges/")
+    pages += 1
+
+    # Track record (paper-trading results)
+    tr = track_record or {"summary": {"count": 0}, "recent": [], "open_count": 0}
+    render("track_record.html.j2", out_dir / "track-record" / "index.html",
+           "../", "/track-record/",
+           summary=tr["summary"], recent=tr["recent"], open_count=tr.get("open_count", 0))
+    urls.append("/track-record/")
     pages += 1
 
     # Assets + sitemap + robots

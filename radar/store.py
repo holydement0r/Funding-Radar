@@ -12,8 +12,45 @@ import time
 from pathlib import Path
 
 from radar.models import FundingSnapshot
+from radar.paper import ClosedTrade, PaperPosition
 
 _DATE_DIR = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+MAX_CLOSED_TRADES = 500  # keep the track record bounded
+
+
+def load_paper(root: str = "data") -> tuple[list[PaperPosition], list[ClosedTrade]]:
+    """Load open paper positions and closed track record from data/paper/."""
+    paper = Path(root) / "paper"
+    open_path = paper / "open.json"
+    closed_path = paper / "closed.json"
+    open_now = [PaperPosition(**d) for d in _read_list(open_path)]
+    closed = [ClosedTrade(**d) for d in _read_list(closed_path)]
+    return open_now, closed
+
+
+def save_paper(
+    open_now: list[PaperPosition], closed: list[ClosedTrade], root: str = "data"
+) -> None:
+    """Persist open positions and (bounded, newest-last) closed trades."""
+    paper = Path(root) / "paper"
+    paper.mkdir(parents=True, exist_ok=True)
+    (paper / "open.json").write_text(
+        json.dumps([dataclasses.asdict(p) for p in open_now], indent=1)
+    )
+    trimmed = closed[-MAX_CLOSED_TRADES:]
+    (paper / "closed.json").write_text(
+        json.dumps([dataclasses.asdict(c) for c in trimmed], indent=1)
+    )
+
+
+def _read_list(path: Path) -> list:
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text())
+    except (ValueError, OSError):
+        return []
 
 
 def write_history(

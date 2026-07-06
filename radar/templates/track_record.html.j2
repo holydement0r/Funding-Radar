@@ -1,0 +1,44 @@
+{% extends "base.html.j2" %}
+{% block title %}Track Record - Paper-Traded Funding Arb Results - Funding Radar{% endblock %}
+{% block description %}Verified track record: realized vs predicted net APR for {{ summary.count }} paper-traded funding-arbitrage opportunities held 7 days each.{% endblock %}
+{% block content %}
+<h1>Track Record</h1>
+<p class="sub">Every alerted opportunity is paper-traded: held 7 days, funding accrued at live
+rates, then closed. This is the realized outcome vs what was predicted at entry.
+No real capital, no survivorship filtering.</p>
+
+{% if summary.count == 0 %}
+<p>No paper trades have closed yet. The first cohort closes 7 days after tracking began.
+Currently tracking {{ open_count }} open positions.</p>
+{% else %}
+<table>
+<tbody>
+<tr><td>Closed trades</td><td><strong>{{ summary.count }}</strong></td></tr>
+<tr><td>Open positions</td><td>{{ open_count }}</td></tr>
+<tr><td>Avg predicted net APR</td><td>{{ pct(summary.avg_predicted_apr) }}</td></tr>
+<tr><td>Avg realized net APR</td><td><strong>{{ pct(summary.avg_realized_apr) }}</strong></td></tr>
+<tr><td>Win rate (realized &gt; 0)</td><td>{{ pct(summary.win_rate) }}</td></tr>
+<tr><td>Realized / predicted</td><td>{{ pct(summary.realized_vs_predicted) }}</td></tr>
+</tbody>
+</table>
+
+<h2>Recent closed trades</h2>
+<table>
+<thead><tr><th>Coin</th><th>Short</th><th>Long</th><th>Predicted APR</th><th>Realized APR</th><th>Closed</th></tr></thead>
+<tbody>
+{% for c in recent %}
+<tr>
+<td><a href="../funding-rates/{{ c.symbol }}/">{{ c.symbol }}</a></td>
+<td>{{ c.short_venue }}</td>
+<td>{{ c.long_venue }}</td>
+<td>{{ pct(c.predicted_net_apr) }}</td>
+<td class="{{ 'pos' if c.realized_net_apr >= 0 else 'neg' }}">{{ pct(c.realized_net_apr) }}</td>
+<td>{{ human_ts(c.exit_ts) }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+<p class="sub">Realized APR annualizes the actual funding earned over the holding window, minus
+round-trip taker fees. Sampled at 30-minute cadence; past results do not predict future ones.</p>
+{% endblock %}
