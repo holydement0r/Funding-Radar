@@ -54,8 +54,10 @@ async def main() -> None:
             raise ValueError(f"unknown mode: {mode!r} (expected 'rates' or 'arb')")
 
         Actor.log.info("returning %d %s rows", len(rows), mode)
+        # Pushing to the default dataset auto-charges the platform's built-in
+        # "apify-default-dataset-item" event; no custom event name needed.
         for row in rows:
-            charge = await Actor.push_data(row, "result-item")
+            charge = await Actor.push_data(row)
             if charge is not None and getattr(charge, "event_charge_limit_reached", False):
                 Actor.log.info("charge limit reached; stopping")
                 break
