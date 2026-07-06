@@ -71,11 +71,18 @@ jobs:
         with:
           path: _site
 
+      # Pages deploy occasionally returns a transient "try again later". The
+      # data pipeline has already succeeded and the site self-heals on the
+      # next 30-min run, so a Pages hiccup must not fail the run or fire a
+      # false-alarm alert. A persistent failure just leaves the site stale
+      # (visible), which is acceptable.
       - name: Deploy Pages
         id: deploy
+        continue-on-error: true
         uses: actions/deploy-pages@v4
 
-      # Alert the maintainer on any failure (build broke, all venues down, etc).
+      # Alert the maintainer only on real pipeline failures (build broke,
+      # all venues down, data publish failed) — not transient Pages issues.
       - name: Notify failure
         if: failure()
         env:
