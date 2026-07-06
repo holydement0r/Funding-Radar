@@ -1,0 +1,106 @@
+{
+ "HYUNDAI:aster:lighter": {
+  "net_apr": 1.54906,
+  "alerted_at": 1783337344
+ },
+ "IBM:aster:lighter": {
+  "net_apr": 0.8307400000000001,
+  "alerted_at": 1783337344
+ },
+ "SNDK:aster:lighter": {
+  "net_apr": 0.8242576000000001,
+  "alerted_at": 1783337344
+ },
+ "SKR:aster:lighter": {
+  "net_apr": 0.6248800000000001,
+  "alerted_at": 1783337344
+ },
+ "LIT:lighter:hyperliquid": {
+  "net_apr": 0.6063116365714285,
+  "alerted_at": 1783337344
+ },
+ "PROVE:lighter:aster": {
+  "net_apr": 0.5460400000000001,
+  "alerted_at": 1783337344
+ },
+ "ZRO:aster:hyperliquid": {
+  "net_apr": 0.5198726285714286,
+  "alerted_at": 1783337344
+ },
+ "SKHYNIX:lighter:aster": {
+  "net_apr": 0.47736160000000005,
+  "alerted_at": 1783337344
+ },
+ "ORCL:lighter:aster": {
+  "net_apr": 0.4761571000000001,
+  "alerted_at": 1783337344
+ },
+ "SYRUP:lighter:hyperliquid": {
+  "net_apr": 0.4622876005714286,
+  "alerted_at": 1783337344
+ },
+ "XCU:aster:lighter": {
+  "net_apr": 0.45406,
+  "alerted_at": 1783337344
+ },
+ "SAMSUNG:lighter:aster": {
+  "net_apr": 0.44698630000000006,
+  "alerted_at": 1783337344
+ },
+ "ALGO:hyperliquid:aster": {
+  "net_apr": 0.4430947325714286,
+  "alerted_at": 1783337344
+ },
+ "VVV:lighter:aster": {
+  "net_apr": 0.43216,
+  "alerted_at": 1783337344
+ },
+ "S:hyperliquid:aster": {
+  "net_apr": 0.35621743257142857,
+  "alerted_at": 1783337344
+ },
+ "STRC:lighter:aster": {
+  "net_apr": 0.31390000000000007,
+  "alerted_at": 1783337344
+ },
+ "ETHFI:aster:hyperliquid": {
+  "net_apr": 0.25470480057142864,
+  "alerted_at": 1783337344
+ },
+ "HEMI:aster:hyperliquid": {
+  "net_apr": 0.2396165765714286,
+  "alerted_at": 1783337344
+ },
+ "RAIL:aster:lighter": {
+  "net_apr": 0.23944000000000007,
+  "alerted_at": 1783337344
+ },
+ "SNX:hyperliquid:aster": {
+  "net_apr": 0.22402990857142857,
+  "alerted_at": 1783337344
+ },
+ "SOXL:lighter:aster": {
+  "net_apr": 0.216664,
+  "alerted_at": 1783337344
+ },
+ "AVAX:lighter:aster": {
+  "net_apr": 0.2044,
+  "alerted_at": 1783337344
+ },
+ "MNT:hyperliquid:lighter": {
+  "net_apr": 0.18521142857142858,
+  "alerted_at": 1783337344
+ },
+ "PENDLE:lighter:aster": {
+  "net_apr": 0.1606,
+  "alerted_at": 1783337344
+ },
+ "POLYX:hyperliquid:aster": {
+  "net_apr": 0.1510179365714286,
+  "alerted_at": 1783337344
+ },
+ "LAYER:hyperliquid:aster": {
+  "net_apr": 0.1505536565714286,
+  "alerted_at": 1783337344
+ }
+}
