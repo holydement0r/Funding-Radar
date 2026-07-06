@@ -1,0 +1,38 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ symbol }} Funding Rates Across Exchanges - Funding Radar{% endblock %}
+{% block description %}Compare {{ symbol }} perpetual funding rates across {{ rows|length }} exchanges including {{ venue_list }}. Live APR and 7-day history.{% endblock %}
+{% block content %}
+<h1>{{ symbol }} Funding Rates</h1>
+<p class="sub">Annualized funding rate for {{ symbol }} perpetuals across exchanges. Positive means longs pay shorts.</p>
+
+<table>
+<thead><tr><th>Exchange</th><th>Interval</th><th>Rate</th><th>APR</th><th>Mark</th><th>Open interest</th></tr></thead>
+<tbody>
+{% for r in rows %}
+<tr>
+<td><a href="../../exchanges/{{ r.venue }}/">{{ r.venue }}</a></td>
+<td>{{ r.interval_hours|int }}h</td>
+<td>{{ "%.5f"|format(r.rate) }}</td>
+<td class="{{ 'pos' if r.apr >= 0 else 'neg' }}">{{ pct(r.apr) }}</td>
+<td>{{ usd(r.mark_price) }}</td>
+<td>{{ usd(r.open_interest_usd) }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+{% if history %}
+<h2>7-Day History</h2>
+<table>
+<thead><tr><th>Time (UTC)</th>{% for v in history_venues %}<th>{{ v }}</th>{% endfor %}</tr></thead>
+<tbody>
+{% for point in history %}
+<tr>
+<td>{{ point.human }}</td>
+{% for v in history_venues %}<td>{% if v in point.rates %}{{ pct(point.rates[v]) }}{% else %}-{% endif %}</td>{% endfor %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% endblock %}

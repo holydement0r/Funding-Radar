@@ -1,0 +1,17 @@
+{% extends "base.html.j2" %}
+{% block title %}Perp DEX Funding Rates by Exchange - Funding Radar{% endblock %}
+{% block description %}Browse perpetual funding rates for every tracked decentralized exchange: {{ venue_list }}.{% endblock %}
+{% block content %}
+<h1>Funding Rates by Exchange</h1>
+<p class="sub">Pick an exchange to see all of its perpetual funding rates.</p>
+<ul>
+{% for v in venues %}<li><a href="{{ v }}/">{{ v }}</a> — {{ counts[v] }} markets</li>
+{% endfor %}
+</ul>
+
+<h2>Compare two exchanges</h2>
+<ul>
+{% for a, b in pairs %}<li><a href="../compare/{{ a }}-vs-{{ b }}/">{{ a }} vs {{ b }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

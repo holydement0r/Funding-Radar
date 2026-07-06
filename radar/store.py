@@ -34,6 +34,37 @@ def write_history(
     return path
 
 
+def load_history_window(*, root: str = "data", days: int = 7, now: float | None = None) -> dict:
+    """Aggregate recent hourly archives into {symbol: [{"t", "rates": {venue: apr}}]}.
+
+    Points are sorted ascending by capture time; each point maps venue -> APR
+    for that symbol at that hour. Used by the site generator's coin pages.
+    """
+    history = Path(root) / "history"
+    if not history.exists():
+        return {}
+    cutoff = (time.time() if now is None else now) - days * 86400
+    cutoff_day = time.strftime("%Y-%m-%d", time.gmtime(cutoff))
+
+    points: dict[str, dict[int, dict[str, float]]] = {}
+    for day_dir in sorted(history.iterdir()):
+        if not day_dir.is_dir() or not _DATE_DIR.match(day_dir.name) or day_dir.name < cutoff_day:
+            continue
+        for hour_file in sorted(day_dir.glob("*.json")):
+            try:
+                data = json.loads(hour_file.read_text())
+            except (ValueError, OSError):
+                continue
+            t = int(data.get("captured_at", 0))
+            for snap in data.get("snapshots", []):
+                points.setdefault(snap["symbol"], {}).setdefault(t, {})[snap["venue"]] = snap["apr"]
+
+    result: dict[str, list[dict]] = {}
+    for symbol, by_t in points.items():
+        result[symbol] = [{"t": t, "rates": by_t[t]} for t in sorted(by_t)]
+    return result
+
+
 def prune_history(*, root: str = "data", keep_days: int = 90, now: float | None = None) -> int:
     """Delete day directories older than keep_days. Returns count removed."""
     history = Path(root) / "history"

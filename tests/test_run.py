@@ -42,7 +42,8 @@ def test_dry_run_snapshot_shape(tmp_path):
     for field in ("venue", "symbol", "rate", "interval_hours", "apr", "fetched_at"):
         assert field in snap
     venues = {s["venue"] for s in latest["snapshots"]}
-    assert venues == {"hyperliquid", "aster", "paradex", "lighter"}
+    assert venues == {"hyperliquid", "aster", "paradex", "lighter",
+                      "binance_via_lighter", "dydx", "extended", "pacifica"}
 
 
 def test_all_failed_keeps_old_latest_and_exits_1(tmp_path):

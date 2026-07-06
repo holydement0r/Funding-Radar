@@ -1,0 +1,21 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ venue_a }} vs {{ venue_b }} Funding Rates - Funding Radar{% endblock %}
+{% block description %}Side-by-side {{ venue_a }} vs {{ venue_b }} perpetual funding rates for {{ rows|length }} shared coins, with the funding spread for each.{% endblock %}
+{% block content %}
+<h1>{{ venue_a }} vs {{ venue_b }}</h1>
+<p class="sub">Funding-rate spread on coins listed by both {{ venue_a }} and {{ venue_b }}. A wide spread is a funding-arb candidate.</p>
+
+<table>
+<thead><tr><th>Coin</th><th>{{ venue_a }} APR</th><th>{{ venue_b }} APR</th><th>Spread</th></tr></thead>
+<tbody>
+{% for r in rows %}
+<tr>
+<td><a href="../../funding-rates/{{ r.symbol }}/">{{ r.symbol }}</a></td>
+<td>{{ pct(r.apr_a) }}</td>
+<td>{{ pct(r.apr_b) }}</td>
+<td><strong>{{ pct(r.spread) }}</strong></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}
