@@ -1,0 +1,12 @@
+.venv/
+.git/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+_site/
+storage/
+apify_storage/
+data/history/
+data/paper/
+docs/
