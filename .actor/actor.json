@@ -3,7 +3,7 @@
   "name": "funding-radar",
   "title": "Funding Rate API - Perp DEX Funding & Arbitrage",
   "description": "Live perpetual funding rates and fee-adjusted funding-arbitrage opportunities across 8 decentralized perp DEXs.",
-  "version": "0.1",
+  "version": "0.2",
   "buildTag": "latest",
   "dockerfile": "./Dockerfile",
   "readme": "../README.md",
