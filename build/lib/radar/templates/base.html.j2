@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Funding Radar{% endblock %}</title>
+<meta name="description" content="{% block description %}Cross-exchange perpetual funding rates and funding arbitrage opportunities across decentralized perp DEXs.{% endblock %}">
+<link rel="canonical" href="{{ site_url }}{{ canonical }}">
+<link rel="stylesheet" href="{{ rel }}style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+<nav>
+<a href="{{ rel }}index.html">Funding Radar</a>
+<a href="{{ rel }}index.html">Arbitrage</a>
+<a href="{{ rel }}track-record/">Track Record</a>
+<a href="{{ rel }}exchanges/">Exchanges</a>
+</nav>
+</header>
+<main>
+{% block content %}{% endblock %}
+</main>
+<div class="cta">
+<h3>Get funding-arb alerts</h3>
+<p>Live cross-exchange funding arbitrage alerts on <a href="{{ telegram_url }}">Telegram</a>,
+or query the data programmatically via the <a href="{{ apify_url }}">Apify API</a>.</p>
+</div>
+<footer>
+<p>Funding Radar aggregates funding rates from {{ venue_count }} perpetual DEXs.
+Data updates every 30 minutes. Generated {{ generated_human }} UTC.</p>
+<p>Not financial advice. Funding arbitrage carries execution, liquidation, and counterparty risk.</p>
+</footer>
+</div>
+</body>
+</html>

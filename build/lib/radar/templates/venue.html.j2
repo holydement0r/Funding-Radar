@@ -1,0 +1,23 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ venue }} Funding Rates (All Coins) - Funding Radar{% endblock %}
+{% block description %}All {{ venue }} perpetual funding rates in one table: {{ rows|length }} markets with live APR, mark price, and open interest.{% endblock %}
+{% block content %}
+<h1>{{ venue }} Funding Rates</h1>
+<p class="sub">Every {{ venue }} perpetual market, sorted by APR.</p>
+{% if stale %}<p class="stale">Warning: {{ venue }} data was stale on the last run.</p>{% endif %}
+
+<table>
+<thead><tr><th>Coin</th><th>Interval</th><th>APR</th><th>Mark</th><th>Open interest</th></tr></thead>
+<tbody>
+{% for r in rows %}
+<tr>
+<td><a href="../../funding-rates/{{ r.symbol }}/">{{ r.symbol }}</a></td>
+<td>{{ r.interval_hours|int }}h</td>
+<td class="{{ 'pos' if r.apr >= 0 else 'neg' }}">{{ pct(r.apr) }}</td>
+<td>{{ price(r.mark_price) }}</td>
+<td>{{ usd(r.open_interest_usd) }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}

@@ -1,58 +1,106 @@
-# Funding Radar
+# Funding Rate API — Perp DEX Funding & Arbitrage Scanner
 
-Cross-exchange **perpetual funding-rate aggregator + funding-arbitrage scanner** for decentralized perp DEXs. One pipeline feeds three channels:
+Get **live funding rates** and **ready-to-trade funding-arbitrage opportunities** across 8 decentralized perp DEXs in a single call. No monthly subscription — you pay only for the rows you pull.
 
-- **Telegram alerts** — live funding-arb opportunities pushed to a free channel
-- **SEO static site** — a programmatically generated page per coin, per exchange, and per exchange-pair (GitHub Pages)
-- **Apify API** — the same data, queryable programmatically, pay-per-result
+Comparable data feeds charge $29–699/month. Here, a typical query costs a few cents.
 
-No servers. The whole thing runs on a GitHub Actions cron every 30 minutes; git branches are the only storage.
+## What can you do with it?
 
-## Links
+- **Find funding-arb trades**: see which coin to short on which venue and long on another, ranked by net APR *after* round-trip taker fees — not the raw spread that evaporates once you pay fees.
+- **Feed your trading bot**: pull normalized funding rates across venues on your own schedule instead of integrating 8 different exchange APIs with 8 different formats and funding intervals.
+- **Monitor a single venue**: filter to just the exchanges or coins you trade.
 
-- **Site:** https://holydement0r.github.io/Funding-Radar/
-- **Telegram:** https://t.me/FundingRadarAlerts
-- **API (Apify):** https://apify.com/opaline_midge/funding-radar
+## Supported exchanges (8)
 
-## How it works
+Hyperliquid · Aster · Paradex · Lighter · Binance (via Lighter) · dYdX v4 · Extended · Pacifica
 
-```
-GitHub Actions (*/30) → collect 8 perp DEXs → normalize → arb scan (fee-adjusted)
-   → write latest.json + hourly history (data branch)
-   → Telegram alerts (dedup)
-   → build static site → GitHub Pages
-```
+All rates are normalized to a common annualized APR, so a 1h-funding venue and an 8h-funding venue are directly comparable.
 
-Arb logic: for each coin, short the highest-funding venue and long the lowest. Net APR subtracts annualized round-trip taker fees over a 7-day hold. Opportunities whose legs have unknown or thin open interest are filtered out, since those show absurd APRs you cannot actually fill.
+## How to use
 
-Every alerted opportunity is also **paper-traded** (held 7 days, funding accrued at live rates, then closed) to build a public realized-vs-predicted track record.
+Run the Actor with JSON input (via the Apify Console, API, or any Apify client):
 
-## Tracked venues (8)
-
-hyperliquid · aster · paradex · lighter · binance (via lighter) · dydx · extended · pacifica
-
-See [docs/venue-notes.md](docs/venue-notes.md) for data sources and the venues that were skipped (drift, vest, bluefin, edgex, hibachi) with reasons.
-
-## Local development
-
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev]"
-pytest -q                                              # full suite
-python -m radar.run --dry-run --data-dir /tmp/fr       # offline pipeline smoke (fixtures)
-python -m radar.run --skip-telegram --site-out _site   # live data, build site, no alerts
+```json
+{
+  "mode": "arb",
+  "symbols": [],
+  "venues": [],
+  "minNetApr": "0.10",
+  "requireOi": true
+}
 ```
 
-## Configuration
+| Field | What it does |
+|-------|--------------|
+| `mode` | `arb` = ranked arbitrage opportunities · `rates` = raw funding rates per venue per coin |
+| `symbols` | Only these coins, e.g. `["BTC", "ETH"]`. Empty = all (~600 coins) |
+| `venues` | Only these exchanges, e.g. `["hyperliquid", "paradex"]`. Empty = all 8 |
+| `minNetApr` | Arb mode: minimum net APR as a decimal (`"0.10"` = 10%) |
+| `requireOi` | Arb mode: drop opportunities where a leg's open interest is unknown — filters thin markets that show absurd, unfillable APRs. Keep `true` |
 
-Alert threshold and arb filters:
+Results land in the run's dataset — download as JSON, CSV, or Excel, or read them via the Apify API.
 
-- Alert threshold: `ALERT_THRESHOLD_APR` env var (default `0.10` = 10%)
-- Min open interest / holding days: `find_opportunities(...)` defaults in `radar/arb.py`
-- Taker fees per venue: `radar/fees.py`
+### Example output — `arb` mode
 
-Runtime secrets (GitHub Actions): `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHANNEL_ID`, `TELEGRAM_ADMIN_CHAT_ID`. Variables: `SITE_URL`, `TELEGRAM_URL`, `APIFY_URL`.
+```json
+{
+  "symbol": "LIT",
+  "short_venue": "hyperliquid",
+  "short_apr": 0.1095,
+  "long_venue": "extended",
+  "long_apr": -0.3767,
+  "spread_apr": 0.4862,
+  "net_apr": 0.4132,
+  "min_oi_usd": 4528851
+}
+```
 
-## Disclaimer
+Read it as: short LIT on Hyperliquid (funding pays you 10.95% APR), long LIT on Extended (negative funding pays you another 37.67%), and after taker fees on both legs you keep an estimated **41.3% APR**, with at least $4.5M open interest on the thinner leg.
 
-Not financial advice. Funding arbitrage carries execution, liquidation, and counterparty risk. Funding rates change continuously and thin DEX liquidity causes slippage; the displayed net APR is an estimate after fees, not a guarantee. Data can be stale or wrong.
+### Example output — `rates` mode
+
+```json
+{
+  "venue": "hyperliquid",
+  "symbol": "BTC",
+  "rate": 0.0000125,
+  "interval_hours": 1.0,
+  "apr": 0.1095,
+  "mark_price": 62903.0,
+  "open_interest_usd": 2236125876,
+  "fetched_at": 1783326670
+}
+```
+
+### Call it from code
+
+```python
+from apify_client import ApifyClient
+
+client = ApifyClient("<YOUR_API_TOKEN>")
+run = client.actor("opaline_midge/funding-radar").call(
+    run_input={"mode": "arb", "minNetApr": "0.10", "requireOi": True}
+)
+for row in client.dataset(run["defaultDatasetId"]).iterate_items():
+    print(row["symbol"], row["net_apr"])
+```
+
+## Why net APR instead of raw spread?
+
+A 30% funding spread means nothing if you pay 4 taker fees to enter and exit both legs. This Actor subtracts annualized round-trip taker fees (per-venue fee table, verified against official docs) over an assumed 7-day hold, so the ranking reflects what you could actually keep.
+
+## FAQ
+
+**How fresh is the data?** Fetched live from the venues' public APIs at the moment you run the Actor — not cached.
+
+**Why do some rows have `min_oi_usd: null`?** A few venues don't publish open interest. With `requireOi: true` (default) those pairs are excluded from arb results.
+
+**Is this trading advice?** No. Funding rates flip fast, thin books slip, and DEXs carry smart-contract and counterparty risk. Net APR is an estimate, not a guarantee. Always verify before trading.
+
+**A venue is missing from my results.** Single-venue outages are isolated — the Actor returns data from the healthy venues instead of failing the whole run.
+
+## More
+
+- Free web dashboard (updates every 30 min): https://holydement0r.github.io/Funding-Radar/
+- Free Telegram alerts: https://t.me/FundingRadarAlerts
+- Open source — code, architecture, and development docs: [docs/development.md](docs/development.md)
