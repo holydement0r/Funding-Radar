@@ -18,6 +18,10 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    # Normal run is ~90s. A generous cap keeps a wedged run from sitting on
+    # the `cron` concurrency group (cancel-in-progress: false) for the 6-hour
+    # default, which would queue every subsequent 30-min run behind it.
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -81,16 +85,27 @@ jobs:
         continue-on-error: true
         uses: actions/deploy-pages@v4
 
-      # Alert the maintainer only on real pipeline failures (build broke,
-      # all venues down, data publish failed) — not transient Pages issues.
+  # Alerting lives in its own job, not a step of `run`. A step-level
+  # `if: failure()` only fires once the job is executing, so the whole class
+  # of job-level deaths — runner never acquired, queue timeout, timeout-minutes
+  # hit, manual cancel — used to fail completely silently. `needs` + always()
+  # catches those too, since this job reports on `run`'s final result rather
+  # than running inside it. Caveat: during a full Actions outage even this job
+  # cannot get a runner; an outage-proof check has to live outside GitHub.
+  notify:
+    needs: run
+    if: ${{ always() && needs.run.result != 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
       - name: Notify failure
-        if: failure()
         env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           ADMIN: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+          RESULT: ${{ needs.run.result }}
         run: |
           if [ -n "$TOKEN" ] && [ -n "$ADMIN" ]; then
             curl -s -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
               -d chat_id="${ADMIN}" \
-              -d text="Funding Radar cron failed: run ${{ github.run_id }} (${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >/dev/null || true
+              -d text="Funding Radar cron ${RESULT}: run ${{ github.run_id }} (${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >/dev/null || true
           fi
