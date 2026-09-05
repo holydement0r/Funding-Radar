@@ -1,0 +1,3989 @@
+[
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1783354850,
+  "exit_ts": 1783965320,
+  "predicted_net_apr": 0.06386196428571426,
+  "realized_net_apr": 0.02051703809827111
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1783354850,
+  "exit_ts": 1783965320,
+  "predicted_net_apr": 0.05406171428571428,
+  "realized_net_apr": 0.016232304902042936
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1783354850,
+  "exit_ts": 1783965320,
+  "predicted_net_apr": 0.028951382857142854,
+  "realized_net_apr": -0.08843358130536146
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1783362383,
+  "exit_ts": 1783970616,
+  "predicted_net_apr": 0.5471149450549451,
+  "realized_net_apr": -0.039803832060679126
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1783362383,
+  "exit_ts": 1783970616,
+  "predicted_net_apr": 0.11517956043956044,
+  "realized_net_apr": -0.0184595310563033
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783369569,
+  "exit_ts": 1783975137,
+  "predicted_net_apr": 0.5217514560439561,
+  "realized_net_apr": -0.00344110671435497
+ },
+ {
+  "symbol": "EUR",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1783369569,
+  "exit_ts": 1783975137,
+  "predicted_net_apr": 0.05923428571428571,
+  "realized_net_apr": -0.021177097045418498
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1783374961,
+  "exit_ts": 1783979813,
+  "predicted_net_apr": 0.4925399841037429,
+  "realized_net_apr": 0.048205228219445825
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1783374961,
+  "exit_ts": 1783979813,
+  "predicted_net_apr": 0.006674285714285716,
+  "realized_net_apr": -0.17408702341266954
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783387022,
+  "exit_ts": 1783999302,
+  "predicted_net_apr": 0.3089529464285714,
+  "realized_net_apr": 0.009206864711256115
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783387022,
+  "exit_ts": 1783999302,
+  "predicted_net_apr": 0.10192950892857143,
+  "realized_net_apr": -0.014096213552009575
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783402688,
+  "exit_ts": 1784008345,
+  "predicted_net_apr": 0.1674119428571429,
+  "realized_net_apr": -0.008726624301213388
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1783417289,
+  "exit_ts": 1784024212,
+  "predicted_net_apr": 0.3398170857142857,
+  "realized_net_apr": -0.013959095499099532
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1783417289,
+  "exit_ts": 1784024212,
+  "predicted_net_apr": 0.11985348571428572,
+  "realized_net_apr": -0.0676279999024588
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783417289,
+  "exit_ts": 1784024212,
+  "predicted_net_apr": 0.054019999999999985,
+  "realized_net_apr": -0.06365650527604985
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783427255,
+  "exit_ts": 1784036604,
+  "predicted_net_apr": 0.10658000000000001,
+  "realized_net_apr": -0.048058389470966544
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1783438035,
+  "exit_ts": 1784047527,
+  "predicted_net_apr": 0.05923428571428571,
+  "realized_net_apr": -0.02774662578015789
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1783463853,
+  "exit_ts": 1784071522,
+  "predicted_net_apr": 0.027523085714285717,
+  "realized_net_apr": 0.053904549986258946
+ },
+ {
+  "symbol": "ENA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783463853,
+  "exit_ts": 1784071522,
+  "predicted_net_apr": 0.003233023999999987,
+  "realized_net_apr": -0.09262870220475292
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1783468664,
+  "exit_ts": 1784076624,
+  "predicted_net_apr": 0.0838498857142857,
+  "realized_net_apr": -0.07634876354760183
+ },
+ {
+  "symbol": "EUR",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1783481340,
+  "exit_ts": 1784087880,
+  "predicted_net_apr": 0.1746910857142857,
+  "realized_net_apr": -0.1085599896369572
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1783491253,
+  "exit_ts": 1784096550,
+  "predicted_net_apr": 0.2749054857142857,
+  "realized_net_apr": -0.06967640064563346
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783491253,
+  "exit_ts": 1784096550,
+  "predicted_net_apr": 0.03457104799999999,
+  "realized_net_apr": -0.033664535834838104
+ },
+ {
+  "symbol": "NEAR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783501598,
+  "exit_ts": 1784112594,
+  "predicted_net_apr": 0.135184904,
+  "realized_net_apr": -0.07299609270569364
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1783515826,
+  "exit_ts": 1784125211,
+  "predicted_net_apr": 0.27766071428571426,
+  "realized_net_apr": -0.09311055154568003
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783515826,
+  "exit_ts": 1784125211,
+  "predicted_net_apr": 0.233456336,
+  "realized_net_apr": -0.056201520916760346
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783515826,
+  "exit_ts": 1784125211,
+  "predicted_net_apr": 0.19964874285714285,
+  "realized_net_apr": -0.03426881820381533
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1783525297,
+  "exit_ts": 1784131326,
+  "predicted_net_apr": 0.056606285714285706,
+  "realized_net_apr": -0.030754617927524916
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783532205,
+  "exit_ts": 1784137645,
+  "predicted_net_apr": 0.845751428,
+  "realized_net_apr": -0.001380935188358866
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783548341,
+  "exit_ts": 1784158126,
+  "predicted_net_apr": 0.26426,
+  "realized_net_apr": -0.006781798710686519
+ },
+ {
+  "symbol": "SUI",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783580520,
+  "exit_ts": 1784193219,
+  "predicted_net_apr": 0.163917704,
+  "realized_net_apr": -0.07328838489064941
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783580520,
+  "exit_ts": 1784193219,
+  "predicted_net_apr": 0.027739999999999987,
+  "realized_net_apr": 0.0053747841925643755
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "dydx",
+  "entry_ts": 1783605012,
+  "exit_ts": 1784214617,
+  "predicted_net_apr": 0.10105285714285714,
+  "realized_net_apr": -0.09819994615595497
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783614474,
+  "exit_ts": 1784220561,
+  "predicted_net_apr": 0.13285999999999998,
+  "realized_net_apr": -0.10190013188859025
+ },
+ {
+  "symbol": "ZRO",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783634278,
+  "exit_ts": 1784239818,
+  "predicted_net_apr": 0.09256662799999998,
+  "realized_net_apr": -0.1551248855667074
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783645748,
+  "exit_ts": 1784263274,
+  "predicted_net_apr": 0.010185238095238067,
+  "realized_net_apr": 0.025320970182268136
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783661723,
+  "exit_ts": 1784272610,
+  "predicted_net_apr": 0.03649999999999999,
+  "realized_net_apr": -0.08398759320358101
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783710055,
+  "exit_ts": 1784315333,
+  "predicted_net_apr": 0.5476608919999999,
+  "realized_net_apr": -0.06134686562721263
+ },
+ {
+  "symbol": "JUP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783766508,
+  "exit_ts": 1784372825,
+  "predicted_net_apr": 0.252501452,
+  "realized_net_apr": -0.04496964193791698
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783766508,
+  "exit_ts": 1784372825,
+  "predicted_net_apr": 0.2187429148571428,
+  "realized_net_apr": 0.01826062828719628
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1783770729,
+  "exit_ts": 1784376763,
+  "predicted_net_apr": 0.10636308571428571,
+  "realized_net_apr": -0.06813342760967207
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783780518,
+  "exit_ts": 1784386736,
+  "predicted_net_apr": 0.012184742857142855,
+  "realized_net_apr": -0.0646499132441597
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783789236,
+  "exit_ts": 1784395918,
+  "predicted_net_apr": 0.27473345600000004,
+  "realized_net_apr": -0.10518718183687664
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783802860,
+  "exit_ts": 1784409796,
+  "predicted_net_apr": 0.2555,
+  "realized_net_apr": -0.04675526019217842
+ },
+ {
+  "symbol": "TIA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1783824387,
+  "exit_ts": 1784436489,
+  "predicted_net_apr": 0.5445800000000001,
+  "realized_net_apr": 0.07989043957981508
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1783836009,
+  "exit_ts": 1784446001,
+  "predicted_net_apr": 0.12306093885714285,
+  "realized_net_apr": -0.03486098825860011
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1783836009,
+  "exit_ts": 1784446001,
+  "predicted_net_apr": 0.048255607142857176,
+  "realized_net_apr": -0.07724730718587028
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783867278,
+  "exit_ts": 1784472943,
+  "predicted_net_apr": 0.057284852,
+  "realized_net_apr": -0.11781971800022123
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1783876287,
+  "exit_ts": 1784485643,
+  "predicted_net_apr": 0.07596980685714284,
+  "realized_net_apr": -0.09292532764510072
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1783880823,
+  "exit_ts": 1784485643,
+  "predicted_net_apr": 0.01627458791208787,
+  "realized_net_apr": 0.015867084501879687
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1783893148,
+  "exit_ts": 1784497976,
+  "predicted_net_apr": 2.105215714285715,
+  "realized_net_apr": -0.22906312444640226
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783923574,
+  "exit_ts": 1784529960,
+  "predicted_net_apr": 0.7131267799999998,
+  "realized_net_apr": -0.06764018292743566
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1783957407,
+  "exit_ts": 1784566549,
+  "predicted_net_apr": 0.6899792308571429,
+  "realized_net_apr": -0.10394706810244571
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1783965320,
+  "exit_ts": 1784573592,
+  "predicted_net_apr": 0.14365262337662338,
+  "realized_net_apr": 0.09860868135423316
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1783965320,
+  "exit_ts": 1784573592,
+  "predicted_net_apr": 0.019121259740259758,
+  "realized_net_apr": 0.009770700574313068
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783970616,
+  "exit_ts": 1784578879,
+  "predicted_net_apr": 0.215768144,
+  "realized_net_apr": -0.07631613288827366
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1783975137,
+  "exit_ts": 1784583803,
+  "predicted_net_apr": 0.21144683599999997,
+  "realized_net_apr": -0.052582559278993725
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1783975137,
+  "exit_ts": 1784583803,
+  "predicted_net_apr": 0.09980966165413531,
+  "realized_net_apr": -0.004332500527083117
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1783979813,
+  "exit_ts": 1784588466,
+  "predicted_net_apr": 0.006674285714285716,
+  "realized_net_apr": -0.09478251089011307
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "pacifica",
+  "short_venue": "paradex",
+  "entry_ts": 1783999302,
+  "exit_ts": 1784607595,
+  "predicted_net_apr": 0.2193319265230143,
+  "realized_net_apr": 0.014270367178167187
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1784008345,
+  "exit_ts": 1784617667,
+  "predicted_net_apr": 0.24022013736263736,
+  "realized_net_apr": -0.045353963197925694
+ },
+ {
+  "symbol": "TIA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784016303,
+  "exit_ts": 1784628108,
+  "predicted_net_apr": 0.26168981599999996,
+  "realized_net_apr": -0.059973513112491716
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784024212,
+  "exit_ts": 1784635699,
+  "predicted_net_apr": 0.0953762624285714,
+  "realized_net_apr": 0.019854822962672252
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784024212,
+  "exit_ts": 1784635699,
+  "predicted_net_apr": 0.024663571428571424,
+  "realized_net_apr": -0.026188990311628028
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784030077,
+  "exit_ts": 1784635699,
+  "predicted_net_apr": 0.03645828571428571,
+  "realized_net_apr": -0.07205408367991914
+ },
+ {
+  "symbol": "ASTER",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784047527,
+  "exit_ts": 1784656423,
+  "predicted_net_apr": 0.09781999999999999,
+  "realized_net_apr": -0.07075549841023754
+ },
+ {
+  "symbol": "JUP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784052244,
+  "exit_ts": 1784661736,
+  "predicted_net_apr": 1.0439,
+  "realized_net_apr": -0.014865290872221463
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784052244,
+  "exit_ts": 1784661736,
+  "predicted_net_apr": 0.17330982142857143,
+  "realized_net_apr": 0.05647074657633874
+ },
+ {
+  "symbol": "XPL",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784058710,
+  "exit_ts": 1784666689,
+  "predicted_net_apr": 0.34309999999999996,
+  "realized_net_apr": -0.039288062257183204
+ },
+ {
+  "symbol": "PEPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784062813,
+  "exit_ts": 1784671421,
+  "predicted_net_apr": 0.9186547759999999,
+  "realized_net_apr": -0.06816324622745676
+ },
+ {
+  "symbol": "EUR",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1784076624,
+  "exit_ts": 1784681948,
+  "predicted_net_apr": 0.12055428571428572,
+  "realized_net_apr": 0.007839191185546943
+ },
+ {
+  "symbol": "AVAX",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784104960,
+  "exit_ts": 1784714384,
+  "predicted_net_apr": 0.39565999999999996,
+  "realized_net_apr": -0.010743300730466792
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784131326,
+  "exit_ts": 1784741670,
+  "predicted_net_apr": 0.18844428571428568,
+  "realized_net_apr": 0.010287048566709926
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784142681,
+  "exit_ts": 1784747974,
+  "predicted_net_apr": 0.09781999999999999,
+  "realized_net_apr": -0.06351711223406184
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1784147606,
+  "exit_ts": 1784752694,
+  "predicted_net_apr": 0.5960734415584416,
+  "realized_net_apr": -0.11839008249957464
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1784152851,
+  "exit_ts": 1784757825,
+  "predicted_net_apr": 0.12694908571428573,
+  "realized_net_apr": -0.07244866708189113
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784163599,
+  "exit_ts": 1784768740,
+  "predicted_net_apr": 0.1679,
+  "realized_net_apr": -0.049329175966460706
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "dydx",
+  "entry_ts": 1784175391,
+  "exit_ts": 1784782258,
+  "predicted_net_apr": 0.0042083196428571445,
+  "realized_net_apr": -0.18083587545245997
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784184196,
+  "exit_ts": 1784791997,
+  "predicted_net_apr": 0.27302,
+  "realized_net_apr": -0.06419134623246092
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784193219,
+  "exit_ts": 1784802191,
+  "predicted_net_apr": 0.301395392,
+  "realized_net_apr": -0.01651118212377583
+ },
+ {
+  "symbol": "SUI",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784193219,
+  "exit_ts": 1784802191,
+  "predicted_net_apr": 0.08906,
+  "realized_net_apr": -0.03497693245787984
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784206795,
+  "exit_ts": 1784817677,
+  "predicted_net_apr": 0.03504834285714285,
+  "realized_net_apr": -0.050856568805464894
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784214617,
+  "exit_ts": 1784823985,
+  "predicted_net_apr": 0.06247548571428571,
+  "realized_net_apr": -0.09479496135602787
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784263274,
+  "exit_ts": 1784876855,
+  "predicted_net_apr": 0.025304547038327546,
+  "realized_net_apr": 0.017488924596358098
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784263274,
+  "exit_ts": 1784876855,
+  "predicted_net_apr": 0.016652342857142857,
+  "realized_net_apr": -0.016965160691566398
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1784272610,
+  "exit_ts": 1784886910,
+  "predicted_net_apr": 0.2344342857142857,
+  "realized_net_apr": 0.013691234301155781
+ },
+ {
+  "symbol": "ENA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784286421,
+  "exit_ts": 1784893331,
+  "predicted_net_apr": 0.33433999999999997,
+  "realized_net_apr": -0.025244359097144557
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784309919,
+  "exit_ts": 1784919470,
+  "predicted_net_apr": 0.17665999999999998,
+  "realized_net_apr": -0.09227752976386223
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784320061,
+  "exit_ts": 1784929041,
+  "predicted_net_apr": 0.045259999999999995,
+  "realized_net_apr": -0.01571238258479423
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784320061,
+  "exit_ts": 1784929041,
+  "predicted_net_apr": 0.04171428571428572,
+  "realized_net_apr": -0.0337077609084042
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784326927,
+  "exit_ts": 1784934109,
+  "predicted_net_apr": 0.828880544,
+  "realized_net_apr": 0.030375410123620293
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784354745,
+  "exit_ts": 1784963817,
+  "predicted_net_apr": 0.010428571428571426,
+  "realized_net_apr": -0.018867344387059806
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1784362816,
+  "exit_ts": 1784971060,
+  "predicted_net_apr": 0.12055428571428572,
+  "realized_net_apr": -0.10798230512754747
+ },
+ {
+  "symbol": "EUR",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784368605,
+  "exit_ts": 1784976741,
+  "predicted_net_apr": 0.12239388571428572,
+  "realized_net_apr": -0.1409836591814989
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1784383031,
+  "exit_ts": 1784988608,
+  "predicted_net_apr": 0.19939428571428575,
+  "realized_net_apr": -0.0665428468564691
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784383031,
+  "exit_ts": 1784988608,
+  "predicted_net_apr": 0.08945628571428571,
+  "realized_net_apr": -0.0734501225588158
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784383031,
+  "exit_ts": 1784988608,
+  "predicted_net_apr": 0.08906,
+  "realized_net_apr": -0.044564654825992395
+ },
+ {
+  "symbol": "TAO",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784383031,
+  "exit_ts": 1784988608,
+  "predicted_net_apr": 0.02884901599999999,
+  "realized_net_apr": -0.06548167375001361
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784405551,
+  "exit_ts": 1785012791,
+  "predicted_net_apr": 0.14551194285714286,
+  "realized_net_apr": -0.09050043127695145
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784413373,
+  "exit_ts": 1785020248,
+  "predicted_net_apr": 0.13359834285714284,
+  "realized_net_apr": -0.01513727241028545
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784436489,
+  "exit_ts": 1785049845,
+  "predicted_net_apr": 0.12309468571428572,
+  "realized_net_apr": -0.02537091698785046
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1784453296,
+  "exit_ts": 1785058402,
+  "predicted_net_apr": 0.03603647085714286,
+  "realized_net_apr": -0.039709958490010015
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784458521,
+  "exit_ts": 1785064766,
+  "predicted_net_apr": 0.12448794285714286,
+  "realized_net_apr": -0.07406234026058114
+ },
+ {
+  "symbol": "NEAR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784476721,
+  "exit_ts": 1785085317,
+  "predicted_net_apr": 0.06528973999999999,
+  "realized_net_apr": -0.0888055654509987
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784494145,
+  "exit_ts": 1785101215,
+  "predicted_net_apr": 0.0029074857142857014,
+  "realized_net_apr": -0.006312430285799003
+ },
+ {
+  "symbol": "JUP",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784501559,
+  "exit_ts": 1785110376,
+  "predicted_net_apr": 0.22803948571428573,
+  "realized_net_apr": 0.03370594997314462
+ },
+ {
+  "symbol": "ZRO",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784518891,
+  "exit_ts": 1785124521,
+  "predicted_net_apr": 0.23788539199999997,
+  "realized_net_apr": 0.14928802145822362
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784518891,
+  "exit_ts": 1785124521,
+  "predicted_net_apr": 0.04427274799999999,
+  "realized_net_apr": -0.03435862123083731
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784573592,
+  "exit_ts": 1785182675,
+  "predicted_net_apr": 0.117711332,
+  "realized_net_apr": -0.07884934710033936
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1784573592,
+  "exit_ts": 1785182675,
+  "predicted_net_apr": 0.10217146900269537,
+  "realized_net_apr": 0.08776735242643437
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1784578879,
+  "exit_ts": 1785188335,
+  "predicted_net_apr": 0.04640714285714284,
+  "realized_net_apr": 0.03126994690914095
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1784583803,
+  "exit_ts": 1785193341,
+  "predicted_net_apr": 0.03566571428571427,
+  "realized_net_apr": -0.006046143819173403
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "dydx",
+  "entry_ts": 1784588466,
+  "exit_ts": 1785193341,
+  "predicted_net_apr": 0.2206536794285714,
+  "realized_net_apr": -0.15310932850773312
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784635699,
+  "exit_ts": 1785241271,
+  "predicted_net_apr": 0.010428571428571426,
+  "realized_net_apr": 0.03148114703247628
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1784644476,
+  "exit_ts": 1785250778,
+  "predicted_net_apr": 0.02675388655462188,
+  "realized_net_apr": -0.04168517587476985
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1784656423,
+  "exit_ts": 1785262479,
+  "predicted_net_apr": 0.20702609000754846,
+  "realized_net_apr": 0.12395497595828014
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1784656423,
+  "exit_ts": 1785262479,
+  "predicted_net_apr": 0.06603313492063487,
+  "realized_net_apr": -0.03857081372050516
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784666689,
+  "exit_ts": 1785274718,
+  "predicted_net_apr": 0.09380529199999998,
+  "realized_net_apr": -0.008961640908338231
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784671421,
+  "exit_ts": 1785279539,
+  "predicted_net_apr": 0.002131391428571397,
+  "realized_net_apr": 0.032559237504149616
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1784681948,
+  "exit_ts": 1785296987,
+  "predicted_net_apr": 0.03425520581113803,
+  "realized_net_apr": 0.03164535266719118
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1784694257,
+  "exit_ts": 1785306656,
+  "predicted_net_apr": 0.012737498857142857,
+  "realized_net_apr": -0.06565178092467168
+ },
+ {
+  "symbol": "JUP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784714384,
+  "exit_ts": 1785326482,
+  "predicted_net_apr": 0.17035718,
+  "realized_net_apr": 0.05379676429169185
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784714384,
+  "exit_ts": 1785326482,
+  "predicted_net_apr": 0.12806565199999997,
+  "realized_net_apr": -0.10524462984601157
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784721418,
+  "exit_ts": 1785326482,
+  "predicted_net_apr": 0.0960262857142857,
+  "realized_net_apr": -0.035470553484590064
+ },
+ {
+  "symbol": "JUP",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1784747974,
+  "exit_ts": 1785357020,
+  "predicted_net_apr": 0.9124911148571427,
+  "realized_net_apr": -0.231708205868982
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1784747974,
+  "exit_ts": 1785357020,
+  "predicted_net_apr": 0.4762591353383458,
+  "realized_net_apr": -0.09753991848315331
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784752694,
+  "exit_ts": 1785360599,
+  "predicted_net_apr": 0.08069628571428572,
+  "realized_net_apr": 0.005488857156957109
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784762995,
+  "exit_ts": 1785369581,
+  "predicted_net_apr": 0.18541999999999997,
+  "realized_net_apr": -0.07586578936090184
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784768740,
+  "exit_ts": 1785381378,
+  "predicted_net_apr": 0.167556608,
+  "realized_net_apr": -0.2109002916997117
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1784817677,
+  "exit_ts": 1785425494,
+  "predicted_net_apr": 0.10764193379790944,
+  "realized_net_apr": -0.039848179606485755
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784823985,
+  "exit_ts": 1785432450,
+  "predicted_net_apr": 0.0805210857142857,
+  "realized_net_apr": -0.06140858157954854
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784834336,
+  "exit_ts": 1785442611,
+  "predicted_net_apr": 0.084690512,
+  "realized_net_apr": -0.09578433694023263
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784844225,
+  "exit_ts": 1785452860,
+  "predicted_net_apr": 0.42061110799999996,
+  "realized_net_apr": 0.060993157162548946
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784876855,
+  "exit_ts": 1785485098,
+  "predicted_net_apr": 0.19023349485714286,
+  "realized_net_apr": -0.011762197726599382
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1784886910,
+  "exit_ts": 1785495981,
+  "predicted_net_apr": 0.4183942857142857,
+  "realized_net_apr": 0.03210068374294624
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784886910,
+  "exit_ts": 1785495981,
+  "predicted_net_apr": 0.029091542857142855,
+  "realized_net_apr": -0.059784145995333875
+ },
+ {
+  "symbol": "ENA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784893331,
+  "exit_ts": 1785503705,
+  "predicted_net_apr": 0.2117,
+  "realized_net_apr": 0.003622978726616792
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784893331,
+  "exit_ts": 1785503705,
+  "predicted_net_apr": 0.082633664,
+  "realized_net_apr": -0.05551323065715774
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "paradex",
+  "short_venue": "dydx",
+  "entry_ts": 1784919470,
+  "exit_ts": 1785525895,
+  "predicted_net_apr": 0.5892284553284877,
+  "realized_net_apr": -0.06848325149566502
+ },
+ {
+  "symbol": "TRUMP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784934109,
+  "exit_ts": 1785540627,
+  "predicted_net_apr": 0.39384054799999996,
+  "realized_net_apr": 0.21577059072272878
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784934109,
+  "exit_ts": 1785540627,
+  "predicted_net_apr": 0.08157282799999999,
+  "realized_net_apr": -0.024073531251128558
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1784934109,
+  "exit_ts": 1785540627,
+  "predicted_net_apr": 0.04136388571428572,
+  "realized_net_apr": -0.07335495872373118
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1784971060,
+  "exit_ts": 1785576754,
+  "predicted_net_apr": 0.3266678668571429,
+  "realized_net_apr": -0.046622918774549535
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1784971060,
+  "exit_ts": 1785576754,
+  "predicted_net_apr": 0.1555942857142857,
+  "realized_net_apr": -0.06580024333475319
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1784971060,
+  "exit_ts": 1785576754,
+  "predicted_net_apr": 0.09175019599999998,
+  "realized_net_apr": -0.057362118224449976
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1784988608,
+  "exit_ts": 1785594376,
+  "predicted_net_apr": 0.09444948571428571,
+  "realized_net_apr": -0.05739026710621888
+ },
+ {
+  "symbol": "NEAR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1784994001,
+  "exit_ts": 1785603566,
+  "predicted_net_apr": 0.2117,
+  "realized_net_apr": -0.07659646665437156
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "paradex",
+  "short_venue": "extended",
+  "entry_ts": 1784994001,
+  "exit_ts": 1785603566,
+  "predicted_net_apr": 0.15387913252477142,
+  "realized_net_apr": 0.06644032423566255
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785038768,
+  "exit_ts": 1785654453,
+  "predicted_net_apr": 0.0824482857142857,
+  "realized_net_apr": -0.06900583165092539
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "dydx",
+  "entry_ts": 1785049845,
+  "exit_ts": 1785663186,
+  "predicted_net_apr": 0.13909315714285714,
+  "realized_net_apr": -0.2228810840484852
+ },
+ {
+  "symbol": "XAG",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785064766,
+  "exit_ts": 1785674092,
+  "predicted_net_apr": 1.1542342857142858,
+  "realized_net_apr": -0.03476170007647794
+ },
+ {
+  "symbol": "KAITO",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785069476,
+  "exit_ts": 1785680930,
+  "predicted_net_apr": 0.85792958,
+  "realized_net_apr": 0.1652754805890549
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785090746,
+  "exit_ts": 1785699825,
+  "predicted_net_apr": 0.10658000000000001,
+  "realized_net_apr": -0.10796337199519929
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1785090746,
+  "exit_ts": 1785699825,
+  "predicted_net_apr": 0.10303428571428572,
+  "realized_net_apr": -0.1333460354403944
+ },
+ {
+  "symbol": "NEAR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785090746,
+  "exit_ts": 1785699825,
+  "predicted_net_apr": 0.023272399999999985,
+  "realized_net_apr": -0.06327006682467134
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785105126,
+  "exit_ts": 1785711544,
+  "predicted_net_apr": 0.010428571428571426,
+  "realized_net_apr": -0.12674644236477275
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785124521,
+  "exit_ts": 1785729997,
+  "predicted_net_apr": 0.208528004,
+  "realized_net_apr": -0.09657421879635197
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785137501,
+  "exit_ts": 1785743831,
+  "predicted_net_apr": 0.045259999999999995,
+  "realized_net_apr": 0.003721006579526035
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785169218,
+  "exit_ts": 1785774747,
+  "predicted_net_apr": 0.11524977199999997,
+  "realized_net_apr": -0.09468239822578935
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1785188335,
+  "exit_ts": 1785793331,
+  "predicted_net_apr": 0.12370206766917291,
+  "realized_net_apr": 0.0008019117693047849
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "dydx",
+  "entry_ts": 1785193341,
+  "exit_ts": 1785805143,
+  "predicted_net_apr": 0.10180588342857143,
+  "realized_net_apr": -0.2025407175694875
+ },
+ {
+  "symbol": "ONDO",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785193341,
+  "exit_ts": 1785805143,
+  "predicted_net_apr": 0.08489724799999998,
+  "realized_net_apr": 0.018980928253415314
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785193341,
+  "exit_ts": 1785805143,
+  "predicted_net_apr": 0.007691071428571422,
+  "realized_net_apr": -0.05098863649536489
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1785200148,
+  "exit_ts": 1785805143,
+  "predicted_net_apr": 0.44464394805194807,
+  "realized_net_apr": 0.08977641870789121
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785211835,
+  "exit_ts": 1785817177,
+  "predicted_net_apr": 0.35262649999999995,
+  "realized_net_apr": -0.03889787269020158
+ },
+ {
+  "symbol": "SUI",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785222808,
+  "exit_ts": 1785838215,
+  "predicted_net_apr": 0.124028168,
+  "realized_net_apr": -0.0472003538610643
+ },
+ {
+  "symbol": "ASTER",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785268897,
+  "exit_ts": 1785876738,
+  "predicted_net_apr": 0.018979999999999997,
+  "realized_net_apr": -0.08207685755535413
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1785283481,
+  "exit_ts": 1785897037,
+  "predicted_net_apr": 0.03566571428571427,
+  "realized_net_apr": 0.0522997579413803
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1785296987,
+  "exit_ts": 1785907954,
+  "predicted_net_apr": 0.13267377551020404,
+  "realized_net_apr": 0.06423628222105174
+ },
+ {
+  "symbol": "DOGE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785317857,
+  "exit_ts": 1785928887,
+  "predicted_net_apr": 0.017568763999999987,
+  "realized_net_apr": -0.005324896045922446
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1785326482,
+  "exit_ts": 1785935460,
+  "predicted_net_apr": 0.03566571428571427,
+  "realized_net_apr": 0.1604728648719774
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "hyperliquid",
+  "short_venue": "dydx",
+  "entry_ts": 1785336106,
+  "exit_ts": 1785944283,
+  "predicted_net_apr": 0.03450034635540068,
+  "realized_net_apr": -0.3592766173562642
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785336106,
+  "exit_ts": 1785944283,
+  "predicted_net_apr": 0.02919503599999998,
+  "realized_net_apr": -0.02663122829061934
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785352570,
+  "exit_ts": 1785958238,
+  "predicted_net_apr": 0.0931354857142857,
+  "realized_net_apr": -0.06206810982584519
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785360599,
+  "exit_ts": 1785967986,
+  "predicted_net_apr": 0.12178068571428571,
+  "realized_net_apr": -0.04585091969238725
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1785369581,
+  "exit_ts": 1785977729,
+  "predicted_net_apr": 0.11650670685714283,
+  "realized_net_apr": -0.15962469437747392
+ },
+ {
+  "symbol": "XPL",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785381378,
+  "exit_ts": 1785989541,
+  "predicted_net_apr": 0.5172417920000001,
+  "realized_net_apr": -0.0653757429196975
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785402849,
+  "exit_ts": 1786010938,
+  "predicted_net_apr": 0.11564868571428571,
+  "realized_net_apr": -0.008657798295315332
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785402849,
+  "exit_ts": 1786010938,
+  "predicted_net_apr": 0.047320685714285715,
+  "realized_net_apr": -0.040983321226333636
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785417018,
+  "exit_ts": 1786028053,
+  "predicted_net_apr": 0.023568571428571425,
+  "realized_net_apr": 0.023040685288697092
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785417018,
+  "exit_ts": 1786028053,
+  "predicted_net_apr": 0.018721579999999988,
+  "realized_net_apr": -0.06036097172548872
+ },
+ {
+  "symbol": "SUI",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785432450,
+  "exit_ts": 1786062273,
+  "predicted_net_apr": 0.14408331200000002,
+  "realized_net_apr": -0.05803877850150279
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1785432450,
+  "exit_ts": 1786062273,
+  "predicted_net_apr": 0.006674285714285716,
+  "realized_net_apr": -0.08337442086490965
+ },
+ {
+  "symbol": "EUR",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785442611,
+  "exit_ts": 1786062273,
+  "predicted_net_apr": 0.06177468571428574,
+  "realized_net_apr": -0.03939372644635301
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1785447817,
+  "exit_ts": 1786062273,
+  "predicted_net_apr": 0.033475714285714275,
+  "realized_net_apr": 0.0019485601835642333
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1785459909,
+  "exit_ts": 1786073316,
+  "predicted_net_apr": 0.12917871428571426,
+  "realized_net_apr": -0.2500470197401507
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785485098,
+  "exit_ts": 1786090467,
+  "predicted_net_apr": 0.43881176000000005,
+  "realized_net_apr": -0.07414462444275145
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785503705,
+  "exit_ts": 1786113134,
+  "predicted_net_apr": 0.374755136,
+  "realized_net_apr": -0.012718571942582297
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785503705,
+  "exit_ts": 1786113134,
+  "predicted_net_apr": 0.12409999999999999,
+  "realized_net_apr": -0.006337193803084533
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785519441,
+  "exit_ts": 1786124988,
+  "predicted_net_apr": 0.14162,
+  "realized_net_apr": -0.07663772357492978
+ },
+ {
+  "symbol": "EUR",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1785519441,
+  "exit_ts": 1786124988,
+  "predicted_net_apr": 0.06799428571428573,
+  "realized_net_apr": -0.09963645687816138
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1785525895,
+  "exit_ts": 1786132420,
+  "predicted_net_apr": 0.23464285714285715,
+  "realized_net_apr": 0.03668659274942307
+ },
+ {
+  "symbol": "JUP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785535552,
+  "exit_ts": 1786142120,
+  "predicted_net_apr": 0.386452364,
+  "realized_net_apr": 0.12599289820300452
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785535552,
+  "exit_ts": 1786142120,
+  "predicted_net_apr": 0.20880607142857138,
+  "realized_net_apr": 0.06267825775698008
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785535552,
+  "exit_ts": 1786142120,
+  "predicted_net_apr": 0.18731128399999997,
+  "realized_net_apr": -0.005307042826888327
+ },
+ {
+  "symbol": "ENA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785535552,
+  "exit_ts": 1786142120,
+  "predicted_net_apr": 0.08029999999999998,
+  "realized_net_apr": -0.06526658633444561
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785540627,
+  "exit_ts": 1786145623,
+  "predicted_net_apr": 0.07236694399999999,
+  "realized_net_apr": -0.0847813403612784
+ },
+ {
+  "symbol": "TRUMP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785546466,
+  "exit_ts": 1786153114,
+  "predicted_net_apr": 0.5761414040000001,
+  "realized_net_apr": 0.031005946878703998
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785546466,
+  "exit_ts": 1786153114,
+  "predicted_net_apr": 0.23797999999999997,
+  "realized_net_apr": -0.08716581485287021
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785569279,
+  "exit_ts": 1786175422,
+  "predicted_net_apr": 0.14822754285714285,
+  "realized_net_apr": -0.0669245853865573
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1785569279,
+  "exit_ts": 1786175422,
+  "predicted_net_apr": 0.10178815485714286,
+  "realized_net_apr": -0.07786241682201725
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1785576754,
+  "exit_ts": 1786181860,
+  "predicted_net_apr": 0.008970200892857133,
+  "realized_net_apr": -0.011897901324034125
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785582991,
+  "exit_ts": 1786188507,
+  "predicted_net_apr": 0.3943042857142857,
+  "realized_net_apr": 0.009972070291784225
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1785582991,
+  "exit_ts": 1786188507,
+  "predicted_net_apr": 0.1555942857142857,
+  "realized_net_apr": 0.03449020871653269
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "paradex",
+  "short_venue": "extended",
+  "entry_ts": 1785603566,
+  "exit_ts": 1786210227,
+  "predicted_net_apr": 0.01989208597372142,
+  "realized_net_apr": 0.023931810218919762
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1785607557,
+  "exit_ts": 1786215113,
+  "predicted_net_apr": 0.14503101885714287,
+  "realized_net_apr": -0.051356750462331055
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1785613413,
+  "exit_ts": 1786219029,
+  "predicted_net_apr": 0.14683428571428572,
+  "realized_net_apr": -0.04545343857295711
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1785613413,
+  "exit_ts": 1786219029,
+  "predicted_net_apr": 0.07675428571428572,
+  "realized_net_apr": -0.04132617481968773
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785617586,
+  "exit_ts": 1786224610,
+  "predicted_net_apr": 0.07642369999999998,
+  "realized_net_apr": -0.07159955565326577
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785621390,
+  "exit_ts": 1786226297,
+  "predicted_net_apr": 0.045259999999999995,
+  "realized_net_apr": -0.05769249621809633
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785628964,
+  "exit_ts": 1786240982,
+  "predicted_net_apr": 0.09628086799999999,
+  "realized_net_apr": -0.15824624505283172
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1785628964,
+  "exit_ts": 1786240982,
+  "predicted_net_apr": 0.07088199885714284,
+  "realized_net_apr": -0.11013425013466273
+ },
+ {
+  "symbol": "ZRO",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785643441,
+  "exit_ts": 1786252339,
+  "predicted_net_apr": 0.48007136,
+  "realized_net_apr": 0.053285087731501785
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785643441,
+  "exit_ts": 1786252339,
+  "predicted_net_apr": 0.06012309199999999,
+  "realized_net_apr": -0.0889724924342008
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785654453,
+  "exit_ts": 1786260762,
+  "predicted_net_apr": 0.081603488,
+  "realized_net_apr": -0.06409736623612712
+ },
+ {
+  "symbol": "ENA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785663186,
+  "exit_ts": 1786268363,
+  "predicted_net_apr": 0.02581455199999999,
+  "realized_net_apr": -0.07498261754233886
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785669398,
+  "exit_ts": 1786274935,
+  "predicted_net_apr": 0.07332954285714287,
+  "realized_net_apr": 0.00193836377940243
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785674092,
+  "exit_ts": 1786280556,
+  "predicted_net_apr": 0.10658000000000001,
+  "realized_net_apr": -0.05829215199092444
+ },
+ {
+  "symbol": "VIRTUAL",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785756615,
+  "exit_ts": 1786363725,
+  "predicted_net_apr": 0.05884763599999998,
+  "realized_net_apr": -0.1955273610382369
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785765542,
+  "exit_ts": 1786373921,
+  "predicted_net_apr": 0.15037999999999999,
+  "realized_net_apr": 0.008248301642344585
+ },
+ {
+  "symbol": "LINK",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785788824,
+  "exit_ts": 1786394548,
+  "predicted_net_apr": 0.0829499,
+  "realized_net_apr": -0.07677541391467399
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "paradex",
+  "entry_ts": 1785788824,
+  "exit_ts": 1786394548,
+  "predicted_net_apr": 0.06539056810057142,
+  "realized_net_apr": 0.02417263535600903
+ },
+ {
+  "symbol": "MORPHO",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785793331,
+  "exit_ts": 1786401436,
+  "predicted_net_apr": 1.002506372,
+  "realized_net_apr": -0.3566733755800988
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785805143,
+  "exit_ts": 1786412626,
+  "predicted_net_apr": 0.13280994285714287,
+  "realized_net_apr": -0.08361964005743701
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1785817177,
+  "exit_ts": 1786424940,
+  "predicted_net_apr": 0.3666191729323308,
+  "realized_net_apr": -0.008991640434760808
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785817177,
+  "exit_ts": 1786424940,
+  "predicted_net_apr": 0.1531414857142857,
+  "realized_net_apr": -0.1426186337253172
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785817177,
+  "exit_ts": 1786424940,
+  "predicted_net_apr": 0.12409999999999999,
+  "realized_net_apr": -0.008304963045831983
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "paradex",
+  "entry_ts": 1785838215,
+  "exit_ts": 1786447200,
+  "predicted_net_apr": 0.08895022244982859,
+  "realized_net_apr": -0.024153339345694615
+ },
+ {
+  "symbol": "VIRTUAL",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785876738,
+  "exit_ts": 1786484829,
+  "predicted_net_apr": 1.23662,
+  "realized_net_apr": -0.01396212721080243
+ },
+ {
+  "symbol": "XAG",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1785881519,
+  "exit_ts": 1786488086,
+  "predicted_net_apr": 0.006674285714285716,
+  "realized_net_apr": 0.016564712487820807
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1785886382,
+  "exit_ts": 1786491608,
+  "predicted_net_apr": 0.04924788571428572,
+  "realized_net_apr": -0.002231142151857326
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1785897037,
+  "exit_ts": 1786507756,
+  "predicted_net_apr": 0.11506305885714284,
+  "realized_net_apr": -0.09580680837747638
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785897037,
+  "exit_ts": 1786507756,
+  "predicted_net_apr": 0.11371314285714286,
+  "realized_net_apr": -0.0013400972964980934
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785897037,
+  "exit_ts": 1786507756,
+  "predicted_net_apr": 0.01847091885714286,
+  "realized_net_apr": -0.10028524977736733
+ },
+ {
+  "symbol": "MORPHO",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785907954,
+  "exit_ts": 1786514137,
+  "predicted_net_apr": 1.681835612,
+  "realized_net_apr": -0.002796014519041255
+ },
+ {
+  "symbol": "ETHFI",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785907954,
+  "exit_ts": 1786514137,
+  "predicted_net_apr": 1.16654,
+  "realized_net_apr": 0.04582639085850314
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1785907954,
+  "exit_ts": 1786514137,
+  "predicted_net_apr": 0.046889464285714264,
+  "realized_net_apr": 0.024306279654646035
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1785951431,
+  "exit_ts": 1786559366,
+  "predicted_net_apr": 0.11403220077220079,
+  "realized_net_apr": 0.042574123322241565
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "dydx",
+  "entry_ts": 1785958238,
+  "exit_ts": 1786563665,
+  "predicted_net_apr": 0.3840957571428571,
+  "realized_net_apr": -0.16502411067940573
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1785958238,
+  "exit_ts": 1786563665,
+  "predicted_net_apr": 0.17260749885714283,
+  "realized_net_apr": -0.11059383376957421
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "paradex",
+  "entry_ts": 1785962749,
+  "exit_ts": 1786571100,
+  "predicted_net_apr": 0.19332930231986428,
+  "realized_net_apr": -0.045149044108254835
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1785962749,
+  "exit_ts": 1786571100,
+  "predicted_net_apr": 0.12924900285714286,
+  "realized_net_apr": 0.03183824515606943
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1785967986,
+  "exit_ts": 1786574410,
+  "predicted_net_apr": 0.266716304,
+  "realized_net_apr": -0.022351799153799975
+ },
+ {
+  "symbol": "DOGE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786010938,
+  "exit_ts": 1786617382,
+  "predicted_net_apr": 0.08625154399999999,
+  "realized_net_apr": -0.05440678970047688
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786010938,
+  "exit_ts": 1786617382,
+  "predicted_net_apr": 0.02471988571428571,
+  "realized_net_apr": -0.03589360150780616
+ },
+ {
+  "symbol": "ASTER",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786028053,
+  "exit_ts": 1786636740,
+  "predicted_net_apr": 0.099305696,
+  "realized_net_apr": -0.04423059084330042
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786028053,
+  "exit_ts": 1786636740,
+  "predicted_net_apr": 0.05730708571428572,
+  "realized_net_apr": -0.10539868289416401
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786062273,
+  "exit_ts": 1786672513,
+  "predicted_net_apr": 0.34191948571428565,
+  "realized_net_apr": 0.003090089138699527
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786062273,
+  "exit_ts": 1786672513,
+  "predicted_net_apr": 0.25195428571428574,
+  "realized_net_apr": 0.05931502887388568
+ },
+ {
+  "symbol": "EUR",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786062273,
+  "exit_ts": 1786672513,
+  "predicted_net_apr": 0.14648388571428572,
+  "realized_net_apr": -0.017188900595175676
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786062273,
+  "exit_ts": 1786672513,
+  "predicted_net_apr": 0.04092588571428571,
+  "realized_net_apr": -0.12959468822823805
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "hyperliquid",
+  "short_venue": "dydx",
+  "entry_ts": 1786073316,
+  "exit_ts": 1786680577,
+  "predicted_net_apr": 0.11068439371428569,
+  "realized_net_apr": -0.26366092811949043
+ },
+ {
+  "symbol": "VIRTUAL",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786090467,
+  "exit_ts": 1786697124,
+  "predicted_net_apr": 0.9719386857142858,
+  "realized_net_apr": 0.452856657313111
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786090467,
+  "exit_ts": 1786697124,
+  "predicted_net_apr": 0.08926857142857143,
+  "realized_net_apr": 0.01320208054069805
+ },
+ {
+  "symbol": "VIRTUAL",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786113134,
+  "exit_ts": 1786719121,
+  "predicted_net_apr": 1.2770411428571427,
+  "realized_net_apr": 0.3505477361993771
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786113134,
+  "exit_ts": 1786719121,
+  "predicted_net_apr": 0.10303428571428572,
+  "realized_net_apr": -0.07278770513360847
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1786118169,
+  "exit_ts": 1786726393,
+  "predicted_net_apr": 0.035294196428571456,
+  "realized_net_apr": 0.017876160265478204
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1786118169,
+  "exit_ts": 1786726393,
+  "predicted_net_apr": 0.00038502285714285545,
+  "realized_net_apr": -0.11180511099500186
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1786129005,
+  "exit_ts": 1786736923,
+  "predicted_net_apr": 0.6505664485439071,
+  "realized_net_apr": 0.13411669948186028
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786132420,
+  "exit_ts": 1786739465,
+  "predicted_net_apr": 0.30111945199999995,
+  "realized_net_apr": -0.18414455454922124
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786135251,
+  "exit_ts": 1786742693,
+  "predicted_net_apr": 0.34309999999999996,
+  "realized_net_apr": -0.09960273811301162
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1786135251,
+  "exit_ts": 1786742693,
+  "predicted_net_apr": 0.05240748214285715,
+  "realized_net_apr": 0.06343163600793689
+ },
+ {
+  "symbol": "XAG",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786138737,
+  "exit_ts": 1786744210,
+  "predicted_net_apr": 0.3132742857142857,
+  "realized_net_apr": -0.13084853319239667
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786142120,
+  "exit_ts": 1786747804,
+  "predicted_net_apr": 0.18099828571428572,
+  "realized_net_apr": -0.12967439205922557
+ },
+ {
+  "symbol": "JUP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786145623,
+  "exit_ts": 1786751311,
+  "predicted_net_apr": 0.5740784239999999,
+  "realized_net_apr": 0.14589390428993138
+ },
+ {
+  "symbol": "TRUMP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786153114,
+  "exit_ts": 1786761208,
+  "predicted_net_apr": 0.14603679199999997,
+  "realized_net_apr": 0.018737790982920385
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786153114,
+  "exit_ts": 1786761208,
+  "predicted_net_apr": 0.07153999999999999,
+  "realized_net_apr": -0.05055279925613474
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786159542,
+  "exit_ts": 1786765132,
+  "predicted_net_apr": 0.032629831999999984,
+  "realized_net_apr": -0.07380091989815553
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1786175422,
+  "exit_ts": 1786782514,
+  "predicted_net_apr": 0.024375323899192863,
+  "realized_net_apr": 0.05786553424235711
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1786185184,
+  "exit_ts": 1786790938,
+  "predicted_net_apr": 0.012338896103896088,
+  "realized_net_apr": 0.08864145625322681
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786188507,
+  "exit_ts": 1786794355,
+  "predicted_net_apr": 0.4557118857142857,
+  "realized_net_apr": 0.03620177994810576
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786188507,
+  "exit_ts": 1786794355,
+  "predicted_net_apr": 0.056869085714285714,
+  "realized_net_apr": -0.05113102550606753
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786199534,
+  "exit_ts": 1786805356,
+  "predicted_net_apr": 0.03154154017857143,
+  "realized_net_apr": 0.0846262234660345
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1786199534,
+  "exit_ts": 1786805356,
+  "predicted_net_apr": 0.020604575892857135,
+  "realized_net_apr": 0.0273445608017277
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786210227,
+  "exit_ts": 1786815992,
+  "predicted_net_apr": 0.06387708571428571,
+  "realized_net_apr": -0.09013458940414187
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786210227,
+  "exit_ts": 1786815992,
+  "predicted_net_apr": 0.010428571428571426,
+  "realized_net_apr": 0.008345901880533567
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786212004,
+  "exit_ts": 1786818571,
+  "predicted_net_apr": 0.219783728,
+  "realized_net_apr": -0.14772346497880695
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786215113,
+  "exit_ts": 1786820320,
+  "predicted_net_apr": 0.17962175599999997,
+  "realized_net_apr": -0.02402012592130626
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786224610,
+  "exit_ts": 1786830395,
+  "predicted_net_apr": 0.06571668571428571,
+  "realized_net_apr": -0.07948351674207847
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786224610,
+  "exit_ts": 1786830395,
+  "predicted_net_apr": 0.028609867999999983,
+  "realized_net_apr": -0.11359358266923082
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786228614,
+  "exit_ts": 1786834094,
+  "predicted_net_apr": 0.101952092,
+  "realized_net_apr": -0.07845273659532273
+ },
+ {
+  "symbol": "JUP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786247901,
+  "exit_ts": 1786854950,
+  "predicted_net_apr": 0.187355084,
+  "realized_net_apr": -0.3298534044049955
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786247901,
+  "exit_ts": 1786854950,
+  "predicted_net_apr": 0.03828954285714285,
+  "realized_net_apr": -0.05709871970353627
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786268363,
+  "exit_ts": 1786875780,
+  "predicted_net_apr": 0.05923428571428571,
+  "realized_net_apr": -0.04855354859676302
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786271673,
+  "exit_ts": 1786877381,
+  "predicted_net_apr": 0.06796329200000001,
+  "realized_net_apr": -0.06512701441607507
+ },
+ {
+  "symbol": "ENA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786284417,
+  "exit_ts": 1786890163,
+  "predicted_net_apr": 0.054019999999999985,
+  "realized_net_apr": -0.034419741811340075
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786311123,
+  "exit_ts": 1786916729,
+  "predicted_net_apr": 2.08705832,
+  "realized_net_apr": -0.04865035499691881
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786311123,
+  "exit_ts": 1786916729,
+  "predicted_net_apr": 0.07153999999999999,
+  "realized_net_apr": -0.0440944244294145
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786326447,
+  "exit_ts": 1786934530,
+  "predicted_net_apr": 0.09496674285714284,
+  "realized_net_apr": 0.07990336858521609
+ },
+ {
+  "symbol": "SUI",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786334105,
+  "exit_ts": 1786941696,
+  "predicted_net_apr": 0.04391796799999999,
+  "realized_net_apr": -0.05742449015280346
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1786350408,
+  "exit_ts": 1786956182,
+  "predicted_net_apr": 0.23532071428571427,
+  "realized_net_apr": -0.252287239012235
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786350408,
+  "exit_ts": 1786956182,
+  "predicted_net_apr": 0.13285999999999998,
+  "realized_net_apr": -0.02235605843196969
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786377911,
+  "exit_ts": 1786984036,
+  "predicted_net_apr": 0.5969105714285715,
+  "realized_net_apr": 0.07707027995395926
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786401436,
+  "exit_ts": 1787007072,
+  "predicted_net_apr": 0.12409999999999999,
+  "realized_net_apr": -0.04618574241667272
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786401436,
+  "exit_ts": 1787007072,
+  "predicted_net_apr": 0.04731234285714285,
+  "realized_net_apr": -0.09966937567242369
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786412626,
+  "exit_ts": 1787020609,
+  "predicted_net_apr": 0.003386323999999996,
+  "realized_net_apr": -0.04309571340090103
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786419877,
+  "exit_ts": 1787027737,
+  "predicted_net_apr": 0.03649999999999999,
+  "realized_net_apr": -0.05403000115131772
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1786442453,
+  "exit_ts": 1787048909,
+  "predicted_net_apr": 0.09893928126104286,
+  "realized_net_apr": 0.14496713633592834
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786442453,
+  "exit_ts": 1787048909,
+  "predicted_net_apr": 0.059389003999999995,
+  "realized_net_apr": -0.06913868168348569
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1786447200,
+  "exit_ts": 1787052595,
+  "predicted_net_apr": 0.6687008571428571,
+  "realized_net_apr": -0.032229201440485605
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1786456466,
+  "exit_ts": 1787063638,
+  "predicted_net_apr": 0.08627035714285713,
+  "realized_net_apr": 0.05612049134346856
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786456466,
+  "exit_ts": 1787063638,
+  "predicted_net_apr": 0.02244228571428572,
+  "realized_net_apr": -0.09504348903045597
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1786514137,
+  "exit_ts": 1787119165,
+  "predicted_net_apr": 0.06757998701298702,
+  "realized_net_apr": 0.12251613047337065
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786533763,
+  "exit_ts": 1787138902,
+  "predicted_net_apr": 0.022093178857142848,
+  "realized_net_apr": -0.03547983271824822
+ },
+ {
+  "symbol": "ENA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786546894,
+  "exit_ts": 1787153498,
+  "predicted_net_apr": 0.259229132,
+  "realized_net_apr": -0.10048386341772228
+ },
+ {
+  "symbol": "NEAR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786546894,
+  "exit_ts": 1787153498,
+  "predicted_net_apr": 0.157219808,
+  "realized_net_apr": -0.10130512443046864
+ },
+ {
+  "symbol": "TRUMP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786555773,
+  "exit_ts": 1787161918,
+  "predicted_net_apr": 0.076208204,
+  "realized_net_apr": -0.2093857739266412
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1786559366,
+  "exit_ts": 1787164525,
+  "predicted_net_apr": 0.04857916256157631,
+  "realized_net_apr": 0.06126355138561454
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786571100,
+  "exit_ts": 1787176291,
+  "predicted_net_apr": 0.05923428571428571,
+  "realized_net_apr": -0.01661620569307869
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1786612339,
+  "exit_ts": 1787218480,
+  "predicted_net_apr": 0.5044792228571429,
+  "realized_net_apr": -0.05874156145726492
+ },
+ {
+  "symbol": "TRX",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786617382,
+  "exit_ts": 1787223629,
+  "predicted_net_apr": 0.054019999999999985,
+  "realized_net_apr": -0.056192234093602106
+ },
+ {
+  "symbol": "DOGE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786621581,
+  "exit_ts": 1787230164,
+  "predicted_net_apr": 0.02977582399999998,
+  "realized_net_apr": -0.06780656171070833
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786680577,
+  "exit_ts": 1787287087,
+  "predicted_net_apr": 0.14297988571428571,
+  "realized_net_apr": -0.10708731421674827
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786680577,
+  "exit_ts": 1787287087,
+  "predicted_net_apr": 0.11179428571428573,
+  "realized_net_apr": -0.07617956398080822
+ },
+ {
+  "symbol": "XAG",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786680577,
+  "exit_ts": 1787287087,
+  "predicted_net_apr": 0.006674285714285716,
+  "realized_net_apr": 0.0013169956828411368
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1786697124,
+  "exit_ts": 1787305001,
+  "predicted_net_apr": 0.34444278285714286,
+  "realized_net_apr": -0.18131010590410887
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786697124,
+  "exit_ts": 1787305001,
+  "predicted_net_apr": 0.14569548571428573,
+  "realized_net_apr": -0.0038115872125446515
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786722742,
+  "exit_ts": 1787330071,
+  "predicted_net_apr": 0.059642167999999995,
+  "realized_net_apr": -0.12930107406914534
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1786733649,
+  "exit_ts": 1787340355,
+  "predicted_net_apr": 0.04189352678571427,
+  "realized_net_apr": -0.017606730429711306
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1786742693,
+  "exit_ts": 1787349032,
+  "predicted_net_apr": 0.3647607116883117,
+  "realized_net_apr": 0.03390185252150451
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "paradex",
+  "entry_ts": 1786746144,
+  "exit_ts": 1787351092,
+  "predicted_net_apr": 0.10681517567632143,
+  "realized_net_apr": 0.01919008650372142
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786749675,
+  "exit_ts": 1787354651,
+  "predicted_net_apr": 0.46300959142857134,
+  "realized_net_apr": 0.09440484921771274
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1786751311,
+  "exit_ts": 1787356198,
+  "predicted_net_apr": 0.12157909978931099,
+  "realized_net_apr": 0.034165153576505014
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786765132,
+  "exit_ts": 1787370109,
+  "predicted_net_apr": 0.616422512,
+  "realized_net_apr": -0.28052026762927523
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786768257,
+  "exit_ts": 1787373161,
+  "predicted_net_apr": 0.11591148571428572,
+  "realized_net_apr": 0.004213761092007995
+ },
+ {
+  "symbol": "TRUMP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786770007,
+  "exit_ts": 1787376434,
+  "predicted_net_apr": 0.211869068,
+  "realized_net_apr": -0.04231798967812452
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1786782514,
+  "exit_ts": 1787387391,
+  "predicted_net_apr": 0.18002459085714284,
+  "realized_net_apr": -0.10533847634526025
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "paradex",
+  "entry_ts": 1786789357,
+  "exit_ts": 1787394210,
+  "predicted_net_apr": 0.0897563584406643,
+  "realized_net_apr": -0.024762808007145337
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786794355,
+  "exit_ts": 1787399168,
+  "predicted_net_apr": 0.07473948571428571,
+  "realized_net_apr": -0.09475132778429035
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1786797400,
+  "exit_ts": 1787402296,
+  "predicted_net_apr": 0.04120154761904757,
+  "realized_net_apr": -0.037160026885496
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786797400,
+  "exit_ts": 1787402296,
+  "predicted_net_apr": 0.03391788571428572,
+  "realized_net_apr": -0.09371799259641328
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1786805356,
+  "exit_ts": 1787412070,
+  "predicted_net_apr": 0.01564285714285714,
+  "realized_net_apr": 0.006813423786241393
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786807210,
+  "exit_ts": 1787412070,
+  "predicted_net_apr": 0.025046821428571425,
+  "realized_net_apr": -0.015521442857660866
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786822068,
+  "exit_ts": 1787427996,
+  "predicted_net_apr": 0.010428571428571426,
+  "realized_net_apr": -0.018663748561299966
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786836027,
+  "exit_ts": 1787440856,
+  "predicted_net_apr": 0.19957791199999997,
+  "realized_net_apr": -0.26460133261183577
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786836027,
+  "exit_ts": 1787440856,
+  "predicted_net_apr": 0.08732889885714286,
+  "realized_net_apr": -0.022541537096402452
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786848149,
+  "exit_ts": 1787453119,
+  "predicted_net_apr": 0.10658000000000001,
+  "realized_net_apr": -0.17157985865675981
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1786858092,
+  "exit_ts": 1787462971,
+  "predicted_net_apr": 0.33289973085714286,
+  "realized_net_apr": -0.15145212447421716
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786865471,
+  "exit_ts": 1787470411,
+  "predicted_net_apr": 0.09427428571428573,
+  "realized_net_apr": -0.04533728486130856
+ },
+ {
+  "symbol": "EUR",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786872910,
+  "exit_ts": 1787477809,
+  "predicted_net_apr": 0.11547348571428573,
+  "realized_net_apr": -0.03349846597332777
+ },
+ {
+  "symbol": "LINK",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786887115,
+  "exit_ts": 1787491942,
+  "predicted_net_apr": 0.130987112,
+  "realized_net_apr": -0.3354058449610683
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786887115,
+  "exit_ts": 1787491942,
+  "predicted_net_apr": 0.08029999999999998,
+  "realized_net_apr": -0.04139864756007916
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786890163,
+  "exit_ts": 1787495013,
+  "predicted_net_apr": 0.21998028571428574,
+  "realized_net_apr": 0.005970419891874067
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1786897477,
+  "exit_ts": 1787502362,
+  "predicted_net_apr": 0.23230946428571425,
+  "realized_net_apr": 0.02725111437827112
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786897477,
+  "exit_ts": 1787502362,
+  "predicted_net_apr": 0.16539714285714285,
+  "realized_net_apr": -0.07504878388429537
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786904932,
+  "exit_ts": 1787509749,
+  "predicted_net_apr": 0.05047428571428572,
+  "realized_net_apr": -0.03174442261179829
+ },
+ {
+  "symbol": "EUR",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786918864,
+  "exit_ts": 1787523690,
+  "predicted_net_apr": 0.1380742857142857,
+  "realized_net_apr": -0.09838962140450311
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786918864,
+  "exit_ts": 1787523690,
+  "predicted_net_apr": 0.09926748571428573,
+  "realized_net_apr": -0.048717162471190054
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1786922409,
+  "exit_ts": 1787527276,
+  "predicted_net_apr": 0.22751167485714285,
+  "realized_net_apr": -0.16153472686908693
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786934530,
+  "exit_ts": 1787539560,
+  "predicted_net_apr": 0.3362171428571429,
+  "realized_net_apr": -0.09199365017592516
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786934530,
+  "exit_ts": 1787539560,
+  "predicted_net_apr": 0.180855164,
+  "realized_net_apr": 0.022393114629588675
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "dydx",
+  "entry_ts": 1786941696,
+  "exit_ts": 1787546635,
+  "predicted_net_apr": 0.25540994089198604,
+  "realized_net_apr": -0.17713457917617798
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786941696,
+  "exit_ts": 1787546635,
+  "predicted_net_apr": 0.12055428571428572,
+  "realized_net_apr": -0.1395023834799872
+ },
+ {
+  "symbol": "SUI",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786941696,
+  "exit_ts": 1787546635,
+  "predicted_net_apr": 0.10492523599999998,
+  "realized_net_apr": -0.18726707520173774
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1786944901,
+  "exit_ts": 1787549885,
+  "predicted_net_apr": 0.0618622857142857,
+  "realized_net_apr": -0.08492355114052602
+ },
+ {
+  "symbol": "JUP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786949695,
+  "exit_ts": 1787554709,
+  "predicted_net_apr": 0.03287248399999998,
+  "realized_net_apr": -0.14672086632731807
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786953222,
+  "exit_ts": 1787558456,
+  "predicted_net_apr": 0.029653183999999985,
+  "realized_net_apr": -0.10636581863057264
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "hyperliquid",
+  "short_venue": "dydx",
+  "entry_ts": 1786956182,
+  "exit_ts": 1787561947,
+  "predicted_net_apr": 0.3752940428571428,
+  "realized_net_apr": -0.18278911918779497
+ },
+ {
+  "symbol": "ENA",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786956182,
+  "exit_ts": 1787561947,
+  "predicted_net_apr": 0.10658000000000001,
+  "realized_net_apr": 0.16155194338641543
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786967484,
+  "exit_ts": 1787572605,
+  "predicted_net_apr": 0.139086608,
+  "realized_net_apr": -0.11039287406108864
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1786978530,
+  "exit_ts": 1787585963,
+  "predicted_net_apr": 0.03516923085714285,
+  "realized_net_apr": -0.0969418513447903
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786984036,
+  "exit_ts": 1787589472,
+  "predicted_net_apr": 0.011150311999999982,
+  "realized_net_apr": -0.2681043032867024
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1786987807,
+  "exit_ts": 1787592681,
+  "predicted_net_apr": 0.10658000000000001,
+  "realized_net_apr": 0.08949382055841053
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "paradex",
+  "short_venue": "dydx",
+  "entry_ts": 1786987807,
+  "exit_ts": 1787592681,
+  "predicted_net_apr": 0.03594478136429287,
+  "realized_net_apr": -0.16063075218203637
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1786994884,
+  "exit_ts": 1787599796,
+  "predicted_net_apr": 0.07675428571428572,
+  "realized_net_apr": -0.0029595977259502487
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1786994884,
+  "exit_ts": 1787599796,
+  "predicted_net_apr": 0.0010342639999999792,
+  "realized_net_apr": -0.1127671653558468
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1786998450,
+  "exit_ts": 1787603769,
+  "predicted_net_apr": 0.033650246857142865,
+  "realized_net_apr": -0.15609171458803703
+ },
+ {
+  "symbol": "NEAR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787003493,
+  "exit_ts": 1787608579,
+  "predicted_net_apr": 0.027739999999999987,
+  "realized_net_apr": 0.16431732692497905
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787007072,
+  "exit_ts": 1787612114,
+  "predicted_net_apr": 0.045560342857142846,
+  "realized_net_apr": 0.03651458557571869
+ },
+ {
+  "symbol": "ASTER",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787008940,
+  "exit_ts": 1787613741,
+  "predicted_net_apr": 0.80738,
+  "realized_net_apr": 0.1685903169310301
+ },
+ {
+  "symbol": "LINK",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787008940,
+  "exit_ts": 1787613741,
+  "predicted_net_apr": 0.13823776399999999,
+  "realized_net_apr": 0.2109903788558418
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787024676,
+  "exit_ts": 1787629750,
+  "predicted_net_apr": 0.16198074285714287,
+  "realized_net_apr": -0.014397560166677148
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "dydx",
+  "entry_ts": 1787024676,
+  "exit_ts": 1787629750,
+  "predicted_net_apr": 0.08165642532467526,
+  "realized_net_apr": -0.19108886766005004
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1787027737,
+  "exit_ts": 1787632749,
+  "predicted_net_apr": 0.3163924285714286,
+  "realized_net_apr": -0.14628423973731142
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "dydx",
+  "entry_ts": 1787030969,
+  "exit_ts": 1787635921,
+  "predicted_net_apr": 0.6438284985221674,
+  "realized_net_apr": -0.20725704879251197
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787036019,
+  "exit_ts": 1787643814,
+  "predicted_net_apr": 0.054019999999999985,
+  "realized_net_apr": 0.14459808894729959
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "paradex",
+  "entry_ts": 1787038679,
+  "exit_ts": 1787643814,
+  "predicted_net_apr": 0.05198604871436428,
+  "realized_net_apr": -0.03975357572320963
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1787042209,
+  "exit_ts": 1787647336,
+  "predicted_net_apr": 0.10360673085714285,
+  "realized_net_apr": -0.21383904064594045
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787048909,
+  "exit_ts": 1787653981,
+  "predicted_net_apr": 0.19418000000000002,
+  "realized_net_apr": 0.12198889423121878
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1787052595,
+  "exit_ts": 1787659009,
+  "predicted_net_apr": 0.01692348571428573,
+  "realized_net_apr": -0.0972687203870623
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1787060562,
+  "exit_ts": 1787665851,
+  "predicted_net_apr": 0.02435939085714285,
+  "realized_net_apr": -0.08678307278109466
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787063638,
+  "exit_ts": 1787669094,
+  "predicted_net_apr": 0.5270600000000001,
+  "realized_net_apr": 0.2116561308519794
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1787067117,
+  "exit_ts": 1787672529,
+  "predicted_net_apr": 0.1600850892857143,
+  "realized_net_apr": -0.16963748486066849
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "extended",
+  "short_venue": "paradex",
+  "entry_ts": 1787070668,
+  "exit_ts": 1787675858,
+  "predicted_net_apr": 0.20113538803912145,
+  "realized_net_apr": 0.0026816923439378568
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787078301,
+  "exit_ts": 1787683160,
+  "predicted_net_apr": 0.9686882668571429,
+  "realized_net_apr": 0.18891550241326333
+ },
+ {
+  "symbol": "XAG",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1787086240,
+  "exit_ts": 1787691466,
+  "predicted_net_apr": 0.1468342857142857,
+  "realized_net_apr": -0.1290949934649205
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1787102023,
+  "exit_ts": 1787707063,
+  "predicted_net_apr": 0.2371498857142857,
+  "realized_net_apr": 0.020258678250694225
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787107168,
+  "exit_ts": 1787712472,
+  "predicted_net_apr": 0.11534,
+  "realized_net_apr": 0.17020363156381568
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1787119165,
+  "exit_ts": 1787726989,
+  "predicted_net_apr": 0.016515145278450355,
+  "realized_net_apr": -0.11483487867029513
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1787122702,
+  "exit_ts": 1787730378,
+  "predicted_net_apr": 0.03566571428571427,
+  "realized_net_apr": -0.006104224987389629
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1787125487,
+  "exit_ts": 1787730378,
+  "predicted_net_apr": 0.26071428571428573,
+  "realized_net_apr": -0.26440678661114153
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787153498,
+  "exit_ts": 1787760014,
+  "predicted_net_apr": 0.05843754285714285,
+  "realized_net_apr": -0.06605685693615337
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787157104,
+  "exit_ts": 1787763288,
+  "predicted_net_apr": 0.15914,
+  "realized_net_apr": 0.03385766048754176
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787157104,
+  "exit_ts": 1787763288,
+  "predicted_net_apr": 0.13285999999999998,
+  "realized_net_apr": -0.03478746244323834
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787160416,
+  "exit_ts": 1787770966,
+  "predicted_net_apr": 0.023811904761904784,
+  "realized_net_apr": 0.11252458303441779
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787164525,
+  "exit_ts": 1787770966,
+  "predicted_net_apr": 0.36938,
+  "realized_net_apr": 0.12188959635500887
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1787179927,
+  "exit_ts": 1787801278,
+  "predicted_net_apr": 0.06213523351648355,
+  "realized_net_apr": 0.03329482864030099
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1787200637,
+  "exit_ts": 1787841107,
+  "predicted_net_apr": 0.5572469600000001,
+  "realized_net_apr": -0.23181931663716324
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787246950,
+  "exit_ts": 1787876167,
+  "predicted_net_apr": 0.8466886228571429,
+  "realized_net_apr": 0.23770672894200903
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787259545,
+  "exit_ts": 1787876167,
+  "predicted_net_apr": 0.8761503800000001,
+  "realized_net_apr": 0.19123280709357765
+ },
+ {
+  "symbol": "XAG",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1787308230,
+  "exit_ts": 1787917178,
+  "predicted_net_apr": 0.006674285714285716,
+  "realized_net_apr": -0.011449103556297057
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787316416,
+  "exit_ts": 1787953570,
+  "predicted_net_apr": 0.4694951907329191,
+  "realized_net_apr": -0.10412816815849368
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1787340355,
+  "exit_ts": 1787953570,
+  "predicted_net_apr": 0.2801135142857143,
+  "realized_net_apr": -0.005031750247873036
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1787343955,
+  "exit_ts": 1787953570,
+  "predicted_net_apr": 0.7729383080000001,
+  "realized_net_apr": -0.35250417062172673
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787354651,
+  "exit_ts": 1787974361,
+  "predicted_net_apr": 0.36860847342857145,
+  "realized_net_apr": 0.03308169476574224
+ },
+ {
+  "symbol": "ZRO",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1787376434,
+  "exit_ts": 1788000697,
+  "predicted_net_apr": 4.472757595999999,
+  "realized_net_apr": -0.13703913546424507
+ },
+ {
+  "symbol": "NEAR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1787376434,
+  "exit_ts": 1788000697,
+  "predicted_net_apr": 1.22787314,
+  "realized_net_apr": -0.23151914070598448
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1787378085,
+  "exit_ts": 1788000697,
+  "predicted_net_apr": 1.0857310857142854,
+  "realized_net_apr": 0.10886054498788968
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1787380772,
+  "exit_ts": 1788000697,
+  "predicted_net_apr": 0.50078,
+  "realized_net_apr": -0.06472936790849859
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1787402296,
+  "exit_ts": 1788017482,
+  "predicted_net_apr": 0.15647028571428573,
+  "realized_net_apr": -0.10818403863807045
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1787402296,
+  "exit_ts": 1788017482,
+  "predicted_net_apr": 0.023822424812030035,
+  "realized_net_apr": 0.023337605798430503
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1787405520,
+  "exit_ts": 1788017482,
+  "predicted_net_apr": 0.036620594975392856,
+  "realized_net_apr": 0.0993492595725842
+ },
+ {
+  "symbol": "SUI",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787408496,
+  "exit_ts": 1788017482,
+  "predicted_net_apr": 0.24813196399999998,
+  "realized_net_apr": -0.02683331880913515
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787430140,
+  "exit_ts": 1788040431,
+  "predicted_net_apr": 0.05689615070129868,
+  "realized_net_apr": 0.007800632907462716
+ },
+ {
+  "symbol": "SKHYNIX",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1787459833,
+  "exit_ts": 1788083471,
+  "predicted_net_apr": 0.39447948571428565,
+  "realized_net_apr": 0.02727524027079811
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "paradex",
+  "entry_ts": 1787514524,
+  "exit_ts": 1788125078,
+  "predicted_net_apr": 0.09229816049587142,
+  "realized_net_apr": 0.022154610951537868
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1787549885,
+  "exit_ts": 1788173235,
+  "predicted_net_apr": 0.1283506857142857,
+  "realized_net_apr": -0.08301316871998075
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1787570918,
+  "exit_ts": 1788198975,
+  "predicted_net_apr": 0.03566571428571427,
+  "realized_net_apr": -0.364781718136317
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787572605,
+  "exit_ts": 1788198975,
+  "predicted_net_apr": 0.03647905942857142,
+  "realized_net_apr": 0.04814139974986585
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1787599796,
+  "exit_ts": 1788215638,
+  "predicted_net_apr": 0.006674285714285716,
+  "realized_net_apr": -0.0193365072106157
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1787659009,
+  "exit_ts": 1788266488,
+  "predicted_net_apr": 0.35163224,
+  "realized_net_apr": 0.008098206730010436
+ },
+ {
+  "symbol": "ASTER",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787665851,
+  "exit_ts": 1788282692,
+  "predicted_net_apr": 0.22921999999999998,
+  "realized_net_apr": -0.06392146478964919
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787672529,
+  "exit_ts": 1788282692,
+  "predicted_net_apr": 0.09781999999999999,
+  "realized_net_apr": -0.0556106001806337
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1787675858,
+  "exit_ts": 1788282692,
+  "predicted_net_apr": 0.5360638030888031,
+  "realized_net_apr": 0.04658447748738524
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1787679126,
+  "exit_ts": 1788293045,
+  "predicted_net_apr": 0.023817146857142854,
+  "realized_net_apr": -0.07623445573837592
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1787693607,
+  "exit_ts": 1788302677,
+  "predicted_net_apr": 0.036310783999999985,
+  "realized_net_apr": -0.131838206328225
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1787730378,
+  "exit_ts": 1788342721,
+  "predicted_net_apr": 0.07491908385093173,
+  "realized_net_apr": -0.009062808490538678
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1787740518,
+  "exit_ts": 1788358089,
+  "predicted_net_apr": 0.015346685714285713,
+  "realized_net_apr": 0.0039978864881932506
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787760014,
+  "exit_ts": 1788371988,
+  "predicted_net_apr": 0.5712777268571428,
+  "realized_net_apr": -0.04966741973777972
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787770966,
+  "exit_ts": 1788382634,
+  "predicted_net_apr": 0.22365114285714288,
+  "realized_net_apr": -0.09497906362966185
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1787770966,
+  "exit_ts": 1788382634,
+  "predicted_net_apr": 0.049414742857142854,
+  "realized_net_apr": -0.07109944469781647
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "hyperliquid",
+  "short_venue": "dydx",
+  "entry_ts": 1787801278,
+  "exit_ts": 1788415997,
+  "predicted_net_apr": 0.031390125142857175,
+  "realized_net_apr": -0.20084654874949429
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1787841107,
+  "exit_ts": 1788450858,
+  "predicted_net_apr": 0.09427428571428573,
+  "realized_net_apr": -0.05716068627029722
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787876167,
+  "exit_ts": 1788491531,
+  "predicted_net_apr": 0.48325999999999997,
+  "realized_net_apr": -0.059418737605462776
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787876167,
+  "exit_ts": 1788491531,
+  "predicted_net_apr": 0.14162,
+  "realized_net_apr": -0.0235202719049993
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1787876167,
+  "exit_ts": 1788491531,
+  "predicted_net_apr": 0.03412098214285714,
+  "realized_net_apr": 0.006956856518038322
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1787917178,
+  "exit_ts": 1788526332,
+  "predicted_net_apr": 1.438907672,
+  "realized_net_apr": -0.10502755423968978
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1787917178,
+  "exit_ts": 1788526332,
+  "predicted_net_apr": 0.3343372725274726,
+  "realized_net_apr": -0.08202652307594177
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1787953570,
+  "exit_ts": 1788565572,
+  "predicted_net_apr": 0.17311428571428572,
+  "realized_net_apr": -0.06274832650089378
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1787974361,
+  "exit_ts": 1788594570,
+  "predicted_net_apr": 0.022970558035714267,
+  "realized_net_apr": 0.031971047048264006
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1787974361,
+  "exit_ts": 1788594570,
+  "predicted_net_apr": 0.014575471999999992,
+  "realized_net_apr": -0.11506034859402557
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1787974361,
+  "exit_ts": 1788594570,
+  "predicted_net_apr": 0.005732251999999993,
+  "realized_net_apr": -0.08059937492737448
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788030875,
+  "exit_ts": 1788635855,
+  "predicted_net_apr": 0.47957116399999994,
+  "realized_net_apr": 0.1401326532559159
+ }
+]

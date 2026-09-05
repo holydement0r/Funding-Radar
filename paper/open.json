@@ -1,0 +1,332 @@
+[
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788040431,
+  "predicted_net_apr": 0.010428571428571426,
+  "round_trip_fees": 0.0019,
+  "accumulated_return": 0.0019760029443277763,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1788047719,
+  "predicted_net_apr": 0.03598425974025976,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": 0.00036382586396830577,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1788100977,
+  "predicted_net_apr": 0.4316218857142856,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": 0.0024262089694444444,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788100977,
+  "predicted_net_apr": 0.21059874285714286,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": 0.0012600912355,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1788100977,
+  "predicted_net_apr": 0.0970774857142857,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": 0.0002360118138888888,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "AAVE",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788100977,
+  "predicted_net_apr": 0.03649999999999999,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.00011608734602777793,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1788125078,
+  "predicted_net_apr": 0.19291188571428575,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": -0.0009640545527777776,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "ENA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1788133394,
+  "predicted_net_apr": 0.23288167999999998,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 6.978624999999992e-05,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1788133394,
+  "predicted_net_apr": 0.048873499999999986,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": -0.0002920221201388888,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788148859,
+  "predicted_net_apr": 0.1593485714285714,
+  "round_trip_fees": 0.0019,
+  "accumulated_return": 0.0010725867879922723,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1788148859,
+  "predicted_net_apr": 0.06177468571428571,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": 0.0008332872999999999,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1788215638,
+  "predicted_net_apr": 0.006674285714285716,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": 0.0007502323305555555,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "NEAR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1788282692,
+  "predicted_net_apr": 0.151296296,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": -0.00036025957475000007,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1788293045,
+  "predicted_net_apr": 0.08901257085714286,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": -0.00082146608625,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "TRX",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788310304,
+  "predicted_net_apr": 0.9222384919999997,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.0020194606489444445,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1788310304,
+  "predicted_net_apr": 0.38204028571428567,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": -0.003360890911111112,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788310304,
+  "predicted_net_apr": 0.2555,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.00018242301411111115,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788342721,
+  "predicted_net_apr": 0.009038763736263694,
+  "round_trip_fees": 0.0019,
+  "accumulated_return": -0.00012149801907946657,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1788358089,
+  "predicted_net_apr": 0.03566571428571427,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": 0.0001041465452623004,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788382634,
+  "predicted_net_apr": 0.054019999999999985,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.0006029741588611112,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1788415997,
+  "predicted_net_apr": 0.21130788571428571,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": -8.360725000000002e-05,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "pacifica",
+  "short_venue": "dydx",
+  "entry_ts": 1788450858,
+  "predicted_net_apr": 0.05128226825396828,
+  "round_trip_fees": 0.0018,
+  "accumulated_return": 0.0004710184989438471,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1788462541,
+  "predicted_net_apr": 1.083054572,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.0016091685846944441,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "dydx",
+  "entry_ts": 1788462541,
+  "predicted_net_apr": 0.04065404761904756,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": 0.0005988146907648347,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "LINK",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788472204,
+  "predicted_net_apr": 0.372763112,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.00024244429761111115,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788526332,
+  "predicted_net_apr": 0.13500607485714283,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": 0.0005196447027222222,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788540367,
+  "predicted_net_apr": 0.13285999999999998,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.0004738347222222222,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1788540367,
+  "predicted_net_apr": 0.12931428571428571,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": -1.866611111111112e-05,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "DOGE",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788549586,
+  "predicted_net_apr": 0.22921999999999998,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.00052328375,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788558063,
+  "predicted_net_apr": 0.08906,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 9.346805555555556e-05,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1788608476,
+  "predicted_net_apr": 0.07684188571428571,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": -5.720278333333334e-05,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1788619340,
+  "predicted_net_apr": 0.06178928571428573,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": 5.96375e-05,
+  "last_update_ts": 1788635855
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1788628284,
+  "predicted_net_apr": 0.40549309999999994,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": -0.0002558558461388889,
+  "last_update_ts": 1788635855
+ }
+]
