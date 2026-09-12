@@ -3,7 +3,7 @@
   "name": "funding-radar",
   "title": "Funding Rate API - Perp DEX Funding & Arbitrage",
   "description": "Live perpetual funding rates and fee-adjusted funding-arbitrage opportunities across 8 decentralized perp DEXs.",
-  "version": "0.2",
+  "version": "0.3",
   "buildTag": "latest",
   "dockerfile": "./Dockerfile",
   "readme": "../README.md",
@@ -17,20 +17,51 @@
           "title": "Arbitrage opportunities",
           "transformation": {
             "fields": [
-              "symbol", "short_venue", "short_apr",
-              "long_venue", "long_apr", "net_apr", "min_oi_usd"
+              "symbol",
+              "short_venue",
+              "short_apr",
+              "long_venue",
+              "long_apr",
+              "spread_apr",
+              "spot_spread_apr",
+              "net_apr",
+              "min_oi_usd",
+              "ranking"
             ]
           },
           "display": {
             "component": "table",
             "properties": {
-              "symbol": { "label": "Coin" },
-              "short_venue": { "label": "Short venue" },
-              "short_apr": { "label": "Short APR" },
-              "long_venue": { "label": "Long venue" },
-              "long_apr": { "label": "Long APR" },
-              "net_apr": { "label": "Net APR" },
-              "min_oi_usd": { "label": "Min leg OI (USD)" }
+              "symbol": {
+                "label": "Coin"
+              },
+              "short_venue": {
+                "label": "Short venue"
+              },
+              "short_apr": {
+                "label": "Short APR"
+              },
+              "long_venue": {
+                "label": "Long venue"
+              },
+              "long_apr": {
+                "label": "Long APR"
+              },
+              "spread_apr": {
+                "label": "Avg spread APR"
+              },
+              "spot_spread_apr": {
+                "label": "Spot spread APR"
+              },
+              "net_apr": {
+                "label": "Net APR"
+              },
+              "min_oi_usd": {
+                "label": "Min leg OI (USD)"
+              },
+              "ranking": {
+                "label": "Ranking"
+              }
             }
           }
         }
