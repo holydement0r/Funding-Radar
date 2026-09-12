@@ -23,6 +23,15 @@ from radar.models import ArbOpportunity, FundingSnapshot
 SECONDS_PER_YEAR = 365 * 86400
 DAYS_PER_YEAR = 365.0
 
+# Strategy generation stamped on every position. v1 ranked on the spot
+# funding spread and held 7 days; measured over 475 closed trades it
+# realized -4.21% APR against a +21.11% prediction, because the spot
+# spread mean-reverts and a 7-day hold charges ~7.6% APR in fees. v2 ranks
+# on a trailing-mean spread and holds longer. The two records are kept and
+# reported apart -- mixing them would launder the v1 result.
+STRATEGY_VERSION = "v2"
+LEGACY_VERSION = "v1"
+
 
 @dataclass
 class PaperPosition:
@@ -34,6 +43,7 @@ class PaperPosition:
     round_trip_fees: float
     accumulated_return: float
     last_update_ts: int
+    version: str = LEGACY_VERSION
 
 
 @dataclass
@@ -45,6 +55,7 @@ class ClosedTrade:
     exit_ts: int
     predicted_net_apr: float
     realized_net_apr: float
+    version: str = LEGACY_VERSION
 
 
 def _key(symbol: str, long_venue: str, short_venue: str) -> str:
@@ -58,6 +69,7 @@ def open_positions(
     now: int,
     fees: dict[str, float],
     max_open: int,
+    version: str = STRATEGY_VERSION,
 ) -> list[PaperPosition]:
     """Open paper positions for opportunities not already tracked."""
     result = list(open_now)
@@ -75,7 +87,7 @@ def open_positions(
         result.append(PaperPosition(
             symbol=opp.symbol, long_venue=opp.long_venue, short_venue=opp.short_venue,
             entry_ts=now, predicted_net_apr=opp.net_apr, round_trip_fees=round_trip,
-            accumulated_return=0.0, last_update_ts=now,
+            accumulated_return=0.0, last_update_ts=now, version=version,
         ))
         existing.add(key)
     return result
@@ -87,8 +99,14 @@ def update_positions(
     *,
     now: int,
     holding_days: float,
+    legacy_holding_days: float | None = None,
 ) -> tuple[list[PaperPosition], list[ClosedTrade]]:
-    """Accrue realized funding, then close positions past the holding period."""
+    """Accrue realized funding, then close positions past the holding period.
+
+    v1 positions opened under the old 7-day rule keep closing on that rule
+    (``legacy_holding_days``); changing their horizon mid-flight would
+    rewrite a record we published.
+    """
     apr_by: dict[tuple[str, str], float] = {
         (s.symbol, s.venue): s.apr for s in snapshots
     }
@@ -104,7 +122,10 @@ def update_positions(
         pos.last_update_ts = now
 
         elapsed_days = (now - pos.entry_ts) / 86400
-        if elapsed_days >= holding_days:
+        limit = holding_days
+        if pos.version == LEGACY_VERSION and legacy_holding_days is not None:
+            limit = legacy_holding_days
+        if elapsed_days >= limit:
             realized_fraction = pos.accumulated_return - pos.round_trip_fees
             realized_net_apr = (
                 realized_fraction * (DAYS_PER_YEAR / elapsed_days)
@@ -114,11 +135,20 @@ def update_positions(
                 symbol=pos.symbol, long_venue=pos.long_venue, short_venue=pos.short_venue,
                 entry_ts=pos.entry_ts, exit_ts=now,
                 predicted_net_apr=pos.predicted_net_apr, realized_net_apr=realized_net_apr,
+                version=pos.version,
             ))
         else:
             still_open.append(pos)
 
     return still_open, closed
+
+
+def summarize_by_version(closed: list[ClosedTrade]) -> dict[str, dict]:
+    """Per-generation track record, so v1's losses are not averaged away."""
+    groups: dict[str, list[ClosedTrade]] = {}
+    for trade in closed:
+        groups.setdefault(trade.version, []).append(trade)
+    return {version: summarize(trades) for version, trades in sorted(groups.items())}
 
 
 def summarize(closed: list[ClosedTrade]) -> dict:

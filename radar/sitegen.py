@@ -19,6 +19,8 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from radar.paper import STRATEGY_VERSION
+
 TEMPLATES_DIR = Path(__file__).parent / "templates"
 
 TELEGRAM_URL = os.environ.get("TELEGRAM_URL", "https://t.me/fundingradar")
@@ -160,7 +162,11 @@ def build_site(latest: dict, history_7d: dict, out_dir: Path, site_url: str,
     tr = track_record or {"summary": {"count": 0}, "recent": [], "open_count": 0}
     render("track_record.html.j2", out_dir / "track-record" / "index.html",
            "../", "/track-record/",
-           summary=tr["summary"], recent=tr["recent"], open_count=tr.get("open_count", 0))
+           summary=tr["summary"], recent=tr["recent"], open_count=tr.get("open_count", 0),
+           # Callers predating per-generation reporting pass neither key; the
+           # page then shows only the blended "recent trades" table.
+           by_version=tr.get("by_version", {}),
+           current_version=tr.get("current_version", STRATEGY_VERSION))
     urls.append("/track-record/")
     pages += 1
 

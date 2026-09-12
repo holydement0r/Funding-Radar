@@ -48,7 +48,9 @@ hyperliquid · aster · paradex · lighter · binance (via lighter) · dydx · e
 ## Notes
 
 - Data is fetched live on each run from public venue APIs.
-- Net APR subtracts annualized round-trip taker fees over a 7-day hold; it is an estimate, not a guarantee. Funding rates change continuously.
+- Net APR subtracts annualized round-trip taker fees over a 21-day hold; it is an estimate *before slippage*, not a guarantee. Funding rates change continuously.
+- Opportunities are ranked on each venue's multi-day average funding, not its latest print. Ranking on the latest print was measured over 475 paper trades at -4.2% realized APR against a +21.1% prediction; the full record is public at https://holydement0r.github.io/Funding-Radar/track-record/
+- On liquidity-verified pairs the edge is roughly 4-5 bps per leg per side of slippage wide. Treat the feed as a screen, not a fill.
 - Not financial advice. Funding arbitrage carries execution, liquidation, and counterparty risk.
 
 ---

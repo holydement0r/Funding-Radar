@@ -124,13 +124,19 @@ def test_track_record_page_empty(tmp_path):
     build(tmp_path)  # no track_record passed -> empty state
     page = (tmp_path / "track-record" / "index.html").read_text()
     assert "Track Record" in page
-    assert "No paper trades have closed yet" in page
+    assert "trades have closed yet" in page
+    assert "a backtest is not a record" in page
 
 
 def test_track_record_page_with_data(tmp_path):
     tr = {
         "summary": {"count": 12, "avg_predicted_apr": 0.25, "avg_realized_apr": 0.18,
                     "win_rate": 0.75, "realized_vs_predicted": 0.72},
+        "by_version": {
+            "v2": {"count": 12, "avg_predicted_apr": 0.25, "avg_realized_apr": 0.18,
+                   "win_rate": 0.75, "realized_vs_predicted": 0.72},
+        },
+        "current_version": "v2",
         "recent": [
             {"symbol": "BTC", "short_venue": "hyperliquid", "long_venue": "lighter",
              "predicted_net_apr": 0.20, "realized_net_apr": 0.15, "exit_ts": 1783326670},
@@ -142,6 +148,29 @@ def test_track_record_page_with_data(tmp_path):
     assert "18.0%" in page  # avg realized
     assert "BTC" in page
     assert "15.0%" in page  # realized on the row
+
+
+def test_track_record_page_publishes_the_losing_generation(tmp_path):
+    """v1's negative record must stay on the page, not be averaged into v2."""
+    tr = {
+        "summary": {"count": 20, "avg_predicted_apr": 0.20, "avg_realized_apr": 0.0,
+                    "win_rate": 0.5, "realized_vs_predicted": 0.0},
+        "by_version": {
+            "v1": {"count": 15, "avg_predicted_apr": 0.21, "avg_realized_apr": -0.042,
+                   "win_rate": 0.278, "realized_vs_predicted": -0.199},
+            "v2": {"count": 5, "avg_predicted_apr": 0.13, "avg_realized_apr": 0.031,
+                   "win_rate": 0.70, "realized_vs_predicted": 0.24},
+        },
+        "current_version": "v2",
+        "recent": [],
+        "open_count": 3,
+    }
+    build_site(LATEST, HISTORY_7D, tmp_path, SITE_URL, track_record=tr)
+    page = (tmp_path / "track-record" / "index.html").read_text()
+    assert "-4.2%" in page          # v1 realized, stated plainly
+    assert "retired" in page
+    assert "3.1%" in page           # v2 realized
+    assert "basis points" in page   # slippage caveat
 
 
 def test_no_javascript(tmp_path):

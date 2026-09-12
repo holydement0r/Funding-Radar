@@ -21,9 +21,11 @@ import time
 from pathlib import Path
 
 from radar.alert import format_alert, select_alerts, send_telegram
-from radar.arb import find_opportunities
+from radar.arb import DEFAULT_HOLDING_DAYS, find_opportunities
 from radar.collect import collect_all
 from radar.models import FundingSnapshot
+from radar.remote_signal import encode
+from radar.signal import DEFAULT_SIGNAL_DAYS, trailing_mean_apr
 from radar.store import load_history_window, prune_history, write_history
 from radar.venues.base import VenueAdapter
 
@@ -31,6 +33,9 @@ log = logging.getLogger(__name__)
 
 FIXTURES_DIR = Path(__file__).parent.parent / "tests" / "fixtures"
 DEFAULT_SITE_URL = "https://github.com/funding-radar"
+# Below this many (symbol, venue) signal entries the history is too thin to
+# rank on -- a fresh clone of the repo, not a real market condition.
+MIN_SIGNAL_KEYS = 50
 
 
 class _FixtureAdapter(VenueAdapter):
@@ -72,7 +77,8 @@ def _fixture_adapters() -> list[VenueAdapter]:
 
 
 PAPER_MAX_OPEN = 200
-PAPER_HOLDING_DAYS = 7.0
+PAPER_HOLDING_DAYS = DEFAULT_HOLDING_DAYS
+LEGACY_PAPER_HOLDING_DAYS = 7.0  # v1 positions still close on their own rule
 
 
 def _run_paper_tracker(snapshots, opportunities, data_dir) -> None:
@@ -84,7 +90,8 @@ def _run_paper_tracker(snapshots, opportunities, data_dir) -> None:
     open_now, closed = load_paper(root=str(data_dir))
     now = int(time.time())
     open_now, newly_closed = update_positions(
-        open_now, snapshots, now=now, holding_days=PAPER_HOLDING_DAYS)
+        open_now, snapshots, now=now, holding_days=PAPER_HOLDING_DAYS,
+        legacy_holding_days=LEGACY_PAPER_HOLDING_DAYS)
     closed.extend(newly_closed)
     verified = [o for o in opportunities if o.min_oi_usd is not None]
     open_now = open_positions(verified, open_now, now=now,
@@ -96,13 +103,23 @@ def _run_paper_tracker(snapshots, opportunities, data_dir) -> None:
 
 def _load_track_record(data_dir) -> dict:
     """Summary stats + recent closed trades for the site's track-record page."""
-    from radar.paper import summarize
+    from radar.paper import STRATEGY_VERSION, summarize, summarize_by_version
     from radar.store import load_paper
 
     _, closed = load_paper(root=str(data_dir))
-    summary = summarize(closed)
-    recent = [dataclasses.asdict(c) for c in closed[-50:][::-1]]
-    return {"summary": summary, "recent": recent, "open_count": _paper_open_count(data_dir)}
+    by_version = summarize_by_version(closed)
+    current = [c for c in closed if c.version == STRATEGY_VERSION]
+    recent = [dataclasses.asdict(c) for c in (current or closed)[-50:][::-1]]
+    return {
+        # `summary` stays the blended all-time figure for backwards
+        # compatibility with the template; `by_version` is what the page
+        # should lead with, since the two generations are different products.
+        "summary": summarize(closed),
+        "by_version": by_version,
+        "current_version": STRATEGY_VERSION,
+        "recent": recent,
+        "open_count": _paper_open_count(data_dir),
+    }
 
 
 def _paper_open_count(data_dir) -> int:
@@ -135,10 +152,28 @@ def main(argv: list[str] | None = None, adapters: list[VenueAdapter] | None = No
         log.error("all venues failed (%s); keeping previous latest.json", result.failed_venues)
         return 1
 
-    opportunities = find_opportunities(result.snapshots)
-
     data_dir = Path(args.data_dir)
     data_dir.mkdir(parents=True, exist_ok=True)
+
+    # Rank on the trailing-mean spread, not the latest print. On a cold data
+    # dir (first run, or a wiped data branch) there is no history to average,
+    # so fall back to spot ranking rather than publishing an empty board.
+    signal_history = load_history_window(
+        root=str(data_dir), days=DEFAULT_SIGNAL_DAYS + 1)
+    signal = trailing_mean_apr(
+        signal_history, days=DEFAULT_SIGNAL_DAYS, now=time.time())
+    if len(signal) < MIN_SIGNAL_KEYS:
+        log.warning("thin signal (%d keys); falling back to spot ranking", len(signal))
+        signal = None
+    else:
+        # Published to the data branch so one-shot consumers (the Apify
+        # actor) can rank the same way without carrying days of history.
+        (data_dir / "signal.json").write_text(json.dumps({
+            "generated_at": int(time.time()),
+            "signal_days": DEFAULT_SIGNAL_DAYS,
+            "signal": encode(signal),
+        }, indent=1))
+    opportunities = find_opportunities(result.snapshots, signal=signal)
     latest = {
         "generated_at": int(time.time()),
         "snapshots": [dataclasses.asdict(s) for s in result.snapshots],

@@ -12,6 +12,7 @@ from apify import Actor
 
 from radar.arb import find_opportunities
 from radar.collect import collect_all
+from radar.remote_signal import RANKING_SPOT_FALLBACK, RANKING_TRAILING_MEAN, fetch
 from radar.venues import all_adapters
 
 
@@ -43,11 +44,21 @@ async def main() -> None:
                 if not symbols or s.symbol in symbols
             ]
         elif mode == "arb":
+            # Rank on the published trailing-mean spread. Ranking on the spot
+            # spread instead realized -4.21% APR over 475 paper trades, so if
+            # the signal is unreachable we still answer but say so per row.
+            signal = fetch()
+            if signal is None:
+                Actor.log.warning(
+                    "published signal unavailable; ranking on the spot spread, "
+                    "which is the retired v1 method -- rows are labelled")
             opps = find_opportunities(
-                result.snapshots, min_net_apr=min_net_apr, require_oi=require_oi
+                result.snapshots, min_net_apr=min_net_apr, require_oi=require_oi,
+                signal=signal,
             )
+            ranking = RANKING_SPOT_FALLBACK if signal is None else RANKING_TRAILING_MEAN
             rows = [
-                dataclasses.asdict(o) for o in opps
+                dict(dataclasses.asdict(o), ranking=ranking) for o in opps
                 if not symbols or o.symbol in symbols
             ]
         else:

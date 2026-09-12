@@ -16,7 +16,9 @@ from radar.paper import ClosedTrade, PaperPosition
 
 _DATE_DIR = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
-MAX_CLOSED_TRADES = 500  # keep the track record bounded
+MAX_CLOSED_TRADES = 500  # keep the track record bounded -- per strategy version,
+# so a new generation filling up the log cannot silently evict the older
+# generation's record (including the one that lost money).
 
 
 def load_paper(root: str = "data") -> tuple[list[PaperPosition], list[ClosedTrade]]:
@@ -38,10 +40,21 @@ def save_paper(
     (paper / "open.json").write_text(
         json.dumps([dataclasses.asdict(p) for p in open_now], indent=1)
     )
-    trimmed = closed[-MAX_CLOSED_TRADES:]
+    trimmed = _trim_per_version(closed)
     (paper / "closed.json").write_text(
         json.dumps([dataclasses.asdict(c) for c in trimmed], indent=1)
     )
+
+
+def _trim_per_version(closed: list[ClosedTrade]) -> list[ClosedTrade]:
+    """Keep the newest MAX_CLOSED_TRADES of each version, in original order."""
+    keep: set[int] = set()
+    seen: dict[str, list[int]] = {}
+    for i, trade in enumerate(closed):
+        seen.setdefault(trade.version, []).append(i)
+    for indices in seen.values():
+        keep.update(indices[-MAX_CLOSED_TRADES:])
+    return [t for i, t in enumerate(closed) if i in keep]
 
 
 def _read_list(path: Path) -> list:

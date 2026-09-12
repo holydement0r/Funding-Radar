@@ -1,27 +1,60 @@
 {% extends "base.html.j2" %}
+{% set v1 = by_version.get('v1') %}
+{% set v2 = by_version.get(current_version) %}
 {% block title %}Track Record - Paper-Traded Funding Arb Results - Funding Radar{% endblock %}
-{% block description %}Verified track record: realized vs predicted net APR for {{ summary.count }} paper-traded funding-arbitrage opportunities held 7 days each.{% endblock %}
+{% block description %}Full paper-trading record, including the losing first generation: realized vs predicted net APR on every alerted funding-arbitrage opportunity.{% endblock %}
 {% block content %}
 <h1>Track Record</h1>
-<p class="sub">Every alerted opportunity is paper-traded: held 7 days, funding accrued at live
-rates, then closed. This is the realized outcome vs what was predicted at entry.
-No real capital, no survivorship filtering.</p>
+<p class="sub">Every alerted opportunity is paper-traded: opened at the published rate,
+funding accrued at live rates on every run, then closed at the end of its holding
+window. No real capital, no survivorship filtering, and nothing is removed after the
+fact &mdash; including the generation below that lost money.</p>
 
-{% if summary.count == 0 %}
-<p>No paper trades have closed yet. The first cohort closes 7 days after tracking began.
-Currently tracking {{ open_count }} open positions.</p>
+{% if v1 %}
+<h2>Generation v1 &mdash; retired</h2>
+<p class="sub">v1 ranked opportunities on the <em>instantaneous</em> funding spread and held
+7 days. It does not work, and the numbers say so:</p>
+<table>
+<tbody>
+<tr><td>Closed trades</td><td><strong>{{ v1.count }}</strong></td></tr>
+<tr><td>Avg predicted net APR</td><td>{{ pct(v1.avg_predicted_apr) }}</td></tr>
+<tr><td>Avg realized net APR</td><td class="neg"><strong>{{ pct(v1.avg_realized_apr) }}</strong></td></tr>
+<tr><td>Win rate (realized &gt; 0)</td><td>{{ pct(v1.win_rate) }}</td></tr>
+<tr><td>Realized / predicted</td><td>{{ pct(v1.realized_vs_predicted) }}</td></tr>
+</tbody>
+</table>
+<p class="sub">Two causes, both measurable. Funding spikes mean-revert within hours, so only
+about a fifth of the spread the snapshot advertised was ever earned. And a 7-day holding
+period charges roughly 7.6% APR in round-trip taker fees against a carry that realized
+around 5% &mdash; the trade was under water before the market did anything.</p>
+{% endif %}
+
+<h2>Generation {{ current_version }} &mdash; current</h2>
+<p class="sub">{{ current_version }} ranks on the <em>trailing multi-day mean</em> spread rather
+than the latest print, and holds longer so the same round trip is amortized over more
+carry. Over 68 days of stored history the earned fraction of the predicted spread rises
+from ~19% to ~49%, which also makes the published number roughly calibrated instead of
+five times optimistic. Method and sweeps: <code>tools/backtest.py</code> in the repo.</p>
+
+{% if not v2 or v2.count == 0 %}
+<p><strong>No {{ current_version }} trades have closed yet.</strong> The first cohort closes one
+holding period after the switch. Currently tracking {{ open_count }} open positions.
+Until that table fills, the honest summary of this strategy is the backtest, not a
+live record &mdash; and a backtest is not a record.</p>
 {% else %}
 <table>
 <tbody>
-<tr><td>Closed trades</td><td><strong>{{ summary.count }}</strong></td></tr>
+<tr><td>Closed trades</td><td><strong>{{ v2.count }}</strong></td></tr>
 <tr><td>Open positions</td><td>{{ open_count }}</td></tr>
-<tr><td>Avg predicted net APR</td><td>{{ pct(summary.avg_predicted_apr) }}</td></tr>
-<tr><td>Avg realized net APR</td><td><strong>{{ pct(summary.avg_realized_apr) }}</strong></td></tr>
-<tr><td>Win rate (realized &gt; 0)</td><td>{{ pct(summary.win_rate) }}</td></tr>
-<tr><td>Realized / predicted</td><td>{{ pct(summary.realized_vs_predicted) }}</td></tr>
+<tr><td>Avg predicted net APR</td><td>{{ pct(v2.avg_predicted_apr) }}</td></tr>
+<tr><td>Avg realized net APR</td><td class="{{ 'pos' if v2.avg_realized_apr >= 0 else 'neg' }}"><strong>{{ pct(v2.avg_realized_apr) }}</strong></td></tr>
+<tr><td>Win rate (realized &gt; 0)</td><td>{{ pct(v2.win_rate) }}</td></tr>
+<tr><td>Realized / predicted</td><td>{{ pct(v2.realized_vs_predicted) }}</td></tr>
 </tbody>
 </table>
+{% endif %}
 
+{% if recent %}
 <h2>Recent closed trades</h2>
 <table>
 <thead><tr><th>Coin</th><th>Short</th><th>Long</th><th>Predicted APR</th><th>Realized APR</th><th>Closed</th></tr></thead>
@@ -39,6 +72,14 @@ Currently tracking {{ open_count }} open positions.</p>
 </tbody>
 </table>
 {% endif %}
-<p class="sub">Realized APR annualizes the actual funding earned over the holding window, minus
-round-trip taker fees. Sampled at 30-minute cadence; past results do not predict future ones.</p>
+
+<h2>What this record does not include</h2>
+<p class="sub">Costs here are taker fees only. Slippage is not modelled, and on the
+liquidity-verified universe the entire edge fits inside roughly 4-5 basis points of
+spread crossing per leg per side &mdash; cross the book any wider than that and the
+strategy is flat to negative again. Funding-rate arbitrage on major pairs is a
+thin-margin trade, and anyone quoting you a big number on BTC or ETH is quoting a
+spread they have not paid to cross. Realized APR annualizes actual funding earned over
+the holding window minus round-trip taker fees, sampled at the run cadence. Past
+results do not predict future ones.</p>
 {% endblock %}

@@ -3,13 +3,17 @@
 {% block description %}Live funding-rate arbitrage opportunities across {{ venue_count }} perp DEXs, ranked by fee-adjusted net APR. Short the high-funding venue, long the low.{% endblock %}
 {% block content %}
 <h1>Funding Rate Arbitrage Scanner</h1>
-<p class="sub">Fee-adjusted net APR from holding a delta-neutral position for 7 days. Short the high-funding leg, long the low-funding leg.</p>
+<p class="sub">Fee-adjusted net APR from holding a delta-neutral position for 21 days: short the
+high-funding leg, long the low-funding leg. Ranked on each venue's multi-day average funding,
+not its latest print &mdash; ranking on the latest print realized
+<a href="track-record/">&minus;4.2% APR over 475 paper trades</a>. Net APR is before slippage,
+and on these pairs the edge is only about 4&ndash;5 bps per leg wide.</p>
 
 <h2>Liquidity-verified opportunities</h2>
 <p class="sub">Both legs have at least $500K open interest reported by the venue API.</p>
 {% if verified %}
 <table>
-<thead><tr><th>Coin</th><th>Short (high)</th><th>Long (low)</th><th>Spread APR</th><th>Net APR</th><th>Min leg OI</th></tr></thead>
+<thead><tr><th>Coin</th><th>Short (high)</th><th>Long (low)</th><th title="Gap between the two venues' multi-day average funding">Avg spread APR</th><th>Net APR</th><th>Min leg OI</th></tr></thead>
 <tbody>
 {% for o in verified %}
 <tr>
@@ -33,7 +37,7 @@
 here usually mean a thin or stale market that cannot be traded at the displayed
 rates. Treat as leads to verify manually, not signals.</p>
 <table>
-<thead><tr><th>Coin</th><th>Short (high)</th><th>Long (low)</th><th>Spread APR</th><th>Net APR</th></tr></thead>
+<thead><tr><th>Coin</th><th>Short (high)</th><th>Long (low)</th><th title="Gap between the two venues' multi-day average funding">Avg spread APR</th><th>Net APR</th></tr></thead>
 <tbody>
 {% for o in unverified %}
 <tr>

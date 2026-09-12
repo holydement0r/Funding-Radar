@@ -27,8 +27,13 @@ class FundingSnapshot:
 class ArbOpportunity:
     """A funding-rate arbitrage pair: short the high-funding venue, long the low one.
 
-    ``spread_apr = short_apr - long_apr`` (always >= 0 by construction).
-    ``net_apr`` is the spread minus annualized round-trip taker fees.
+    ``long_apr``/``short_apr`` are the live spot rates, shown to readers.
+    ``spread_apr = short_apr - long_apr`` is the spread the ranking used
+    (always >= 0 by construction) -- the trailing-mean spread when a signal
+    is supplied, otherwise the spot spread. ``net_apr`` is that spread minus
+    annualized round-trip taker fees, and is the number we publish.
+    ``spot_spread_apr`` is always the instantaneous spread, kept for display
+    so a reader can see how far the current print sits from its own mean.
     ``min_oi_usd`` is the smaller open interest of the two legs, None if unknown.
     """
 
@@ -40,3 +45,4 @@ class ArbOpportunity:
     spread_apr: float
     net_apr: float
     min_oi_usd: float | None
+    spot_spread_apr: float | None = None
