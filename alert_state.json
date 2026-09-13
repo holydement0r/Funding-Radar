@@ -1,0 +1,10 @@
+{
+ "ZEC:pacifica:extended": {
+  "net_apr": 0.18195076190476192,
+  "alerted_at": 1789297943
+ },
+ "ETH:dydx:paradex": {
+  "net_apr": 0.11602668806733013,
+  "alerted_at": 1789297943
+ }
+}
