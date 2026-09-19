@@ -1,0 +1,189 @@
+[
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1789236582,
+  "predicted_net_apr": 0.08068117021390558,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": 0.0017678129085548847,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1789236582,
+  "predicted_net_apr": 0.06088468875353253,
+  "round_trip_fees": 0.001,
+  "accumulated_return": 0.001587869542584178,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1789246126,
+  "predicted_net_apr": 0.16548253528925938,
+  "round_trip_fees": 0.001,
+  "accumulated_return": -0.0006939686175393722,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1789253561,
+  "predicted_net_apr": 0.07251078238826503,
+  "round_trip_fees": 0.0018,
+  "accumulated_return": 0.0014395482529993293,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "paradex",
+  "short_venue": "extended",
+  "entry_ts": 1789278161,
+  "predicted_net_apr": 0.03591828978516898,
+  "round_trip_fees": 0.0005,
+  "accumulated_return": 0.0005998795464412496,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "NEAR",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1789297942,
+  "predicted_net_apr": 0.05678966866666674,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.0008767488026388891,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1789297942,
+  "predicted_net_apr": 0.02505739466429397,
+  "round_trip_fees": 0.0019,
+  "accumulated_return": 0.0018606881540928423,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "ZEC",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1789393311,
+  "predicted_net_apr": 0.10593812742200329,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": 0.0021993926444444445,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1789522392,
+  "predicted_net_apr": 0.02583143889985933,
+  "round_trip_fees": 0.0019,
+  "accumulated_return": 0.0011311603173134773,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1789543146,
+  "predicted_net_apr": 0.05434851738095235,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 6.281371655555554e-05,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1789629281,
+  "predicted_net_apr": 0.05849871318908542,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": 0.000687602242646472,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1789649001,
+  "predicted_net_apr": 0.007665036152380993,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": 0.00013772961608333334,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1789694648,
+  "predicted_net_apr": 0.06889343624041287,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": -0.0015687241287762898,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1789712527,
+  "predicted_net_apr": 0.16108511575091575,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": 1.7376366666666648e-05,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1789731531,
+  "predicted_net_apr": 0.08348377767857143,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": 0.00036708972222222215,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "LTC",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1789774257,
+  "predicted_net_apr": 0.056536706285714305,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": 0.00026044424816666666,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "pacifica",
+  "short_venue": "extended",
+  "entry_ts": 1789831723,
+  "predicted_net_apr": 0.061358006349206344,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": 0.0,
+  "last_update_ts": 1789831723,
+  "version": "v2"
+ }
+]
