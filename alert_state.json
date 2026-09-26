@@ -1,0 +1,14 @@
+{
+ "ETH:dydx:paradex": {
+  "net_apr": 0.3305075458476695,
+  "alerted_at": 1790451198
+ },
+ "XRP:dydx:hyperliquid": {
+  "net_apr": 0.10458305903401763,
+  "alerted_at": 1790440553
+ },
+ "BTC:dydx:pacifica": {
+  "net_apr": 0.1018123562212124,
+  "alerted_at": 1790315654
+ }
+}
