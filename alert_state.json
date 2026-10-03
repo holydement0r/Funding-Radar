@@ -1,0 +1,14 @@
+{
+ "ADA:hyperliquid:extended": {
+  "net_apr": 0.2017279775238095,
+  "alerted_at": 1791065996
+ },
+ "XRP:dydx:hyperliquid": {
+  "net_apr": 0.18673368600211732,
+  "alerted_at": 1791065996
+ },
+ "SOL:dydx:hyperliquid": {
+  "net_apr": 0.11306292664566553,
+  "alerted_at": 1790914919
+ }
+}
