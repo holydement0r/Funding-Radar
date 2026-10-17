@@ -1,0 +1,233 @@
+[
+ {
+  "symbol": "JUP",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1790511565,
+  "predicted_net_apr": 0.13863747807238097,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": -0.002128640102333332,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "XMR",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1790634407,
+  "predicted_net_apr": 0.15521031266666652,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.0021920200397500004,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "XAU",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1790634407,
+  "predicted_net_apr": 0.005232361904761909,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": -0.0011396117361111117,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "ADA",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1790647914,
+  "predicted_net_apr": 0.007864448166666677,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.006343710797833331,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "paradex",
+  "entry_ts": 1790672034,
+  "predicted_net_apr": 0.06985783352817199,
+  "round_trip_fees": 0.001,
+  "accumulated_return": 0.003762174644607551,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1790695519,
+  "predicted_net_apr": 0.1549029653690734,
+  "round_trip_fees": 0.0019,
+  "accumulated_return": 0.0030151732439064956,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "PUMP",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1790786515,
+  "predicted_net_apr": 0.1570095218614717,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": 0.0002682597180277777,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "ETH",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1790914918,
+  "predicted_net_apr": 0.09261451821134145,
+  "round_trip_fees": 0.0018,
+  "accumulated_return": 0.004190489997073543,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "SAND",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1790958715,
+  "predicted_net_apr": 0.03844666666666666,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.0018561439480277771,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "BTC",
+  "long_venue": "dydx",
+  "short_venue": "pacifica",
+  "entry_ts": 1791078649,
+  "predicted_net_apr": 0.07998733560471763,
+  "round_trip_fees": 0.0018,
+  "accumulated_return": 0.0035698786546752483,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1791121483,
+  "predicted_net_apr": 0.19785047271235695,
+  "round_trip_fees": 0.0019,
+  "accumulated_return": 0.0036327543279490422,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "hyperliquid",
+  "short_venue": "extended",
+  "entry_ts": 1791180267,
+  "predicted_net_apr": 0.00826959484848487,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": 0.0009619326694999998,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1791212929,
+  "predicted_net_apr": 0.002926743809523829,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": 0.004746574405611111,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "hyperliquid",
+  "short_venue": "pacifica",
+  "entry_ts": 1791238105,
+  "predicted_net_apr": 0.042405143809523885,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": 0.00064243701425,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "PAXG",
+  "long_venue": "pacifica",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1791418796,
+  "predicted_net_apr": 0.08699927535238093,
+  "round_trip_fees": 0.0017000000000000001,
+  "accumulated_return": 0.0004096493480555555,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1791418796,
+  "predicted_net_apr": 0.06282872027870381,
+  "round_trip_fees": 0.0019,
+  "accumulated_return": 0.0018970612242958241,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "HYPE",
+  "long_venue": "paradex",
+  "short_venue": "pacifica",
+  "entry_ts": 1791504630,
+  "predicted_net_apr": 0.025985552877680174,
+  "round_trip_fees": 0.0008,
+  "accumulated_return": 0.0016158496302686222,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "LIT",
+  "long_venue": "extended",
+  "short_venue": "pacifica",
+  "entry_ts": 1791527443,
+  "predicted_net_apr": 0.15373382857142856,
+  "round_trip_fees": 0.0013,
+  "accumulated_return": 0.0015689048944444446,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "BNB",
+  "long_venue": "extended",
+  "short_venue": "hyperliquid",
+  "entry_ts": 1791734008,
+  "predicted_net_apr": 0.02196391214035088,
+  "round_trip_fees": 0.0014,
+  "accumulated_return": -0.0004805668118333333,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "SOL",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1791940830,
+  "predicted_net_apr": 0.0926317016195466,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": 0.001031270629862765,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ },
+ {
+  "symbol": "XRP",
+  "long_venue": "dydx",
+  "short_venue": "extended",
+  "entry_ts": 1792175947,
+  "predicted_net_apr": 0.07682554761904761,
+  "round_trip_fees": 0.0015,
+  "accumulated_return": 0.00027430416666666664,
+  "last_update_ts": 1792263806,
+  "version": "v2"
+ }
+]

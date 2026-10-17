@@ -1,0 +1,14 @@
+{
+ "LIT:hyperliquid:pacifica": {
+  "net_apr": 0.14382486975238096,
+  "alerted_at": 1792263807
+ },
+ "ADA:hyperliquid:extended": {
+  "net_apr": 0.12299087498666665,
+  "alerted_at": 1792263807
+ },
+ "SOL:dydx:extended": {
+  "net_apr": 0.10434214300751966,
+  "alerted_at": 1792242380
+ }
+}
