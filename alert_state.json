@@ -1,0 +1,10 @@
+{
+ "LTC:pacifica:extended": {
+  "net_apr": 0.13180852190476192,
+  "alerted_at": 1792866010
+ },
+ "LIT:hyperliquid:pacifica": {
+  "net_apr": 0.12026421903238094,
+  "alerted_at": 1792866010
+ }
+}
