@@ -1,0 +1,10 @@
+{
+ "SOL:pacifica:dydx": {
+  "net_apr": 0.30089345186469446,
+  "alerted_at": 1794051134
+ },
+ "LIT:hyperliquid:extended": {
+  "net_apr": 0.10552146106666667,
+  "alerted_at": 1794008513
+ }
+}
