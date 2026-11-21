@@ -1,0 +1,18 @@
+{
+ "JUP:hyperliquid:extended": {
+  "net_apr": 0.27685092180952375,
+  "alerted_at": 1795283036
+ },
+ "ETH:paradex:dydx": {
+  "net_apr": 0.1804469446253893,
+  "alerted_at": 1795283036
+ },
+ "BTC:paradex:extended": {
+  "net_apr": 0.10185093482238095,
+  "alerted_at": 1795283036
+ },
+ "ZEC:pacifica:extended": {
+  "net_apr": 0.10755959047619049,
+  "alerted_at": 1795255425
+ }
+}
